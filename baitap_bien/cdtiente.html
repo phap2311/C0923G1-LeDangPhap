@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Curency</th>
+        <th>To Curency</th>
+        <th></th>
+    </tr>
+    <br>
+    <tr>
+        <td><input type="text" id="amount"></td>
+        <td>
+            <select id="from">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="cdtiente()" style="background-color: blue; color: white">Convert
+            </button>
+        </td>
+    </tr>
+</table>
+<p id="result" style="color: blue"></p>
+<script>
+    function cdtiente() {
+        let amount = document.getElementById("amount").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let result;
+        if (from == "USD" && to == "VND") {
+            result = "result: " + amount * 23000 + "D";
+        } else if (from == "VND" && to == "USD") {
+            result = "result: " + amount / 23000 + "$";
+        } else if (from == "VND" && to == "VND") {
+            result = "result: " + amount + "D";
+        } else {
+            result = "result: " + amount + "$";
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<table>
+    <tr>
+        <td>
+            <input type="text" id="number1" placeholder="Nhap so thu nhat">
+        </td>
+        <td>
+            <input type="text" id="number2" placeholder="Nhap so thu hai">
+        </td>
+    </tr>
+    <table/>
+    <table>
+        <tr>
+            <td>
+                <button onclick="add()">Addition(+)</button>
+            </td>
+            <td>
+                <button onclick="sub()">Subtraction(-)</button>
+            </td>
+            <td>
+                <button onclick="mul()">Multiplication(X)</button>
+            </td>
+            <td>
+                <button onclick="div()">Division</button>
+            </td>
+
+        </tr>
+    </table>
+    <h4 id="result">Result</h4>
+    <script>
+        function add() {
+            let number1 = +document.getElementById("number1").value;
+            let number2 = +document.getElementById("number2").value;
+            let Result = (number1) + (number2);
+            document.getElementById("result").innerHTML = Result;
+
+        }
+
+        function sub() {
+            let number1 = +document.getElementById("number1").value;
+            let number2 = +document.getElementById("number2").value;
+            let Result = (number1) - (number2);
+            document.getElementById("result").innerHTML = Result;
+
+        }
+
+        function mul() {
+            let number1 = +document.getElementById("number1").value;
+            let number2 = +document.getElementById("number2").value;
+            let Result = (number1) * (number2);
+            document.getElementById("result").innerHTML = Result;
+
+        }
+
+        function div() {
+            let number1 = +document.getElementById("number1").value;
+            let number2 = +document.getElementById("number2").value;
+            let Result = (number1) / (number2);
+            document.getElementById("result").innerHTML = Result;
+        }
+    </script>
+</body>
+</html>
