@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function equation2() {
+        let a = +prompt("nhập hệ số a");
+        while (a === 0) {
+            alert("nhập lại ");
+            a = +prompt("nhập lại hệ số a")
+        }
+        let b = +prompt("nhập hệ số b");
+        let c = +prompt("nhập hệ số c")
+        let delta = (b * b - 4 * a * c);
+        let x1 = ((-b) + Math.sqrt(delta)) / (2 * a);
+        let x2 = ((-b) - Math.sqrt(delta)) / (2 * a);
+        let x = (-b) / (2 * a);
+        if (delta > 0) {
+            alert("phương trình có hai nghiệm là: " + x1 + " và " + x2)
+        } else if (delta === 0) {
+            alert("phương trình có duy nhất 1 nghiệm là: " + x)
+        } else {
+            alert("phương trình vô nghiệm")
+        }
+
+    }
+
+    equation2();
+</script>
+</body>
+</html>

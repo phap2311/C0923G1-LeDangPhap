@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function triangle() {
+        let a = +prompt("nhập cạnh kề 1");
+        while (a <= 0) {
+            alert("nhập lại ");
+            a = +prompt("nhập lại cạnh kề 1")
+        }
+        let b = +prompt("nhập cạnh kề 2");
+        while (b <= 0) {
+            alert("nhập lại");
+            b = +prompt("nhập cạnh kề 2")
+        }
+        let area = (a * b) / 2;
+        alert("diện tích hình tam giác vuông là: " + area)
+    }
+
+    triangle();
+</script>
+
+</body>
+</html>

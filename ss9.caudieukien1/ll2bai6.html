@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function equation1() {
+        let a = +prompt("nhập hệ số a");
+        while (a === 0) {
+            alert("nhập lại ");
+            a = +prompt("nhập lại hệ số a")
+        };
+        let b = +prompt("nhập số b");
+        let x = -b / a;
+        alert("Nghiệm của phương trình bậc nhất là: " + x);
+    }
+
+    equation1();
+</script>
+</body>
+</html>

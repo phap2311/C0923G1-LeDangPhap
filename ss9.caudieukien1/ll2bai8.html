@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function year_old() {
+        let old = +prompt("nhập tuổi của bạn: ")
+        if (old > 0 && old < 120 && parseInt(old) === old) {
+            alert("Đây là tuổi của một người")
+        } else {
+            alert("Đây không phải là tuổi của một người")
+        }
+    }
+
+    year_old();
+</script>
+</body>
+</html>

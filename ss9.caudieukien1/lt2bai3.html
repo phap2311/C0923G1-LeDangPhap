@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function square() {
+        let a = +prompt("nhập cạnh hình vuông");
+        while (a <= 0) {
+            alert("nhập lại ");
+            a = +prompt("nhập lại cạnh hình vuông");
+        }
+        let area = a * a;
+        alert("Diện tích hình vuông là: " + area);
+    }
+
+    square();
+</script>
+</body>
+</html>
