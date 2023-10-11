@@ -22,7 +22,7 @@
             alert("nhập lại");
             interestRate = +prompt("nhập lại tỷ số lãi suất");
         }
-        let monthlyInterst = principal * ((interestRate / 100) / 12) * month;
+        let monthlyInterst = (principal * Math.pow((1 + (interestRate / 100)), month)) - principal;
         alert("số tiền lãi hàng tháng bạn phải đóng là: " + monthlyInterst + " triệu")
     }
 
