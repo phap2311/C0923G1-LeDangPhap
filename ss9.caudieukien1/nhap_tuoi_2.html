@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function old() {
+        let tuoi = +prompt("nhập tuổi");
+        if (tuoi < 15 && tuoi > 0) {
+            alert("học sinh không đủ điều kiện vào học lớp 10")
+        } else {
+            alert("nhập lại"),
+                tuoi = +prompt("nhập lại tuổi")
+        }
+    }
+
+    old();
+</script>
+</body>
+</html>

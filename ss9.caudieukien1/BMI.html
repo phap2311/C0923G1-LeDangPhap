@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tính chỉ số cân nặng</h2>
+<table>
+    <tr>
+        <td>Nhập cân nặng: (kg)</td>
+        <td><input type="text" id="weight"></td>
+    </tr>
+    <tr>
+        <td>Nhâp chiều cao: (m)</td>
+        <td><input type="text" id="height"></td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="csbmi()">Kiểm tra</button>
+        </td>
+    </tr>
+    <tr>
+        <td id="result">result</td>
+    </tr>
+</table>
+
+<script>
+    function csbmi() {
+        let weight = document.getElementById("weight").value;
+        let height = document.getElementById("height").value;
+        let bmi = weight / (height * height);
+        let result;
+        if (bmi < 18.5 && bmi > 0) {
+            result = "Underweight"
+        } else if (bmi >= 18.5 && bmi < 25.0) {
+            result = "normal"
+        } else if (bmi >= 25.0 && bmi < 30.0) {
+            result = "overwight"
+        } else if (bmi >= 30.0) {
+            result = "obese"
+        }
+        document.getElementById("result").innerHTML = "chỉ số bmi là:  " + bmi + "<br>" + result
+    }
+
+</script>
+</body>
+</html>

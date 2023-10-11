@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function xephang() {
+        let diem15p = +prompt("nhập điểm bài kiêm tra");
+        while (!(0 <= diem15p && diem15p <= 10)) {
+            alert("Người dùng nhập sai");
+            diem15p = +prompt("nhập lại điểm bài kiểm tra");
+        }
+        let diemthigk = +prompt("nhập điểm thi giữa kì");
+        while (!(0 <= diemthigk && diemthigk <= 10)) {
+            alert("Người dùng nhập sai");
+            diemthigk = +prompt("nhập lại điểm giữa kỳ");
+        }
+        let diemthick = +prompt("nhập điểm cuối kỳ");
+        while (!(0 <= diemthick && diemthick <= 10)) {
+            alert("Người dùng nhập sai");
+            diemthick = +prompt("nhập lại điểm bài cuối kỳ");
+        }
+        let diemtb = (diem15p * 0.2 + diemthigk * 0.2 + diemthick * 0.6);
+
+        if (diemtb >= 8) {
+            alert("học sinh giỏi")
+        } else if (diemtb >= 6.5) {
+            alert("hoc sinh tiên tiến")
+        } else if (diemtb >= 5) {
+            alert("hoc sinh trung bình")
+        } else if (diemtb >= 3.5) {
+            alert("học sinh kém")
+        } else {
+            alert("học sinh yếu")
+        }
+    }
+
+    xephang();
+</script>
+</body>
+</html>
