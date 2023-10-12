@@ -12,14 +12,14 @@
             <input type="text" id="month" placeholder="nhập tháng trong năm">
         </td>
         <td>
-            <button onclick="csbmi()">Check</button>
+            <button onclick="checkmonth()">Check</button>
         </td>
     </tr>
 </table>
 <p id="result"></p>
 <p id="year"></p>
 <script>
-    function csbmi() {
+    function checkmonth() {
         let month = +document.getElementById("month").value;
 
         if (month >= 1 && month <= 12 && parseInt(month) === month) {
@@ -52,6 +52,8 @@
         }
 
     }
+
+    checkmonth();
 </script>
 </body>
 </html>
