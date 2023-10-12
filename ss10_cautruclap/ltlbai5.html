@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let countFibonacci = 0;
+    let a = 0;
+    let b = 1;
+    let sum;
+    let total = 1;
+    while (countFibonacci < 20) {
+        sum = a + b;
+        a = b;
+        b = sum;
+        total += b;
+        countFibonacci++;
+    }
+    document.write("tổng của 20 số dâu tiên trong dãy fibonacci là: " + total);
+</script>
+</body>
+</html>
