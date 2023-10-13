@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let countDivisible = 0;
+    let number = 0;
+    let total = 0;
+    while (countDivisible < 30) {
+        if (number % 7 === 0) {
+            total += number;
+        }
+        console.log(number);
+        countDivisible++;
+        number = number + 7;
+    }
+    document.write("tổng của 30 số đầu tiên trong dãy chia hết cho 7 là: " + total);
+</script>
+</body>
+</html>
