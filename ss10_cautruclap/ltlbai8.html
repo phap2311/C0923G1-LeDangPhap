@@ -8,17 +8,17 @@
 <button onClick="start()">Start</button>
 <script>
     function start() {
-        let number1;
-        let number_ran;
-        let number2;
+        let numberOne;
+        let numberRan;
+        let numberTwo;
         for (let i = 0; i < 3; i++) {
-            number1 = +prompt("nhập số bạn muốn đoán trong khoảng nào ");
-            number_ran = Math.floor(Math.random() * number1);
-            number2 = +prompt("nhập số bạn đoán");
-            if (number2 === number_ran) {
+            numberOne = +prompt("nhập số bạn muốn đoán trong khoảng nào ");
+            numberRan = Math.floor(Math.random() * numberOne);
+            numberTwo = +prompt("nhập số bạn đoán");
+            if (numberTwo === number_ran) {
                 alert("Chúc mừng bạn đoán đúng")
                 return;
-            } else if (number2 > number_ran) {
+            } else if (numberTwo > numberRan) {
                 alert("số bạn đoán lớn hơn")
             } else {
                 alert("số bạn đoán bé lớn hơn")
