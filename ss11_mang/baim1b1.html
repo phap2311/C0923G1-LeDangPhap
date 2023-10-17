@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumber = [];
+    for (let i = 0; i < 10; i++) {
+        arrNumber[i] = +prompt("nhập vào phần tử thứ " + i)
+    }
+    let count = 0;
+    for (let i = 0; i < arrNumber.length; i++) {
+        if (arrNumber[i] >= 10) {
+            count = arrNumber[i];
+        }
+        console.log(count);
+    }
+</script>
+</body>
+</html>

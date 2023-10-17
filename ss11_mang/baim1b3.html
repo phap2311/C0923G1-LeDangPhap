@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("nhập vào số lượng phần tử");
+    let arrNumber = [];
+    for (let i = 0; i < number; i++) {
+        arrNumber[i] = +prompt("nhập vào phần tử thứ " + i)
+    }
+    let avg = 0;
+    let max = arrNumber[0];
+    let sum = 0;
+    for (let i = 0; i < arrNumber.length; i++) {
+        if (max < arrNumber[i]) {
+            max = arrNumber[i];
+        }
+        sum += arrNumber[i];
+        avg = sum / arrNumber.length;
+    }
+    console.log(max);
+    console.log(avg);
+</script>
+</body>
+</html>

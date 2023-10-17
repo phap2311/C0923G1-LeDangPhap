@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrOfNumber = [];
+    for (let i = 0; i < 10; i++) {
+        arrOfNumber[i] = +prompt("nhập vào phần tử thứ " + i);
+    }
+    let max = arrOfNumber[0];
+    let index = 0;
+    for (let i = 0; i < arrOfNumber.length; i++) {
+        if (max < arrOfNumber[i]) {
+            max = arrOfNumber[i];
+            index = i;
+        }
+    }
+    console.log(max);
+    console.log(index);
+</script>
+</body>
+</html>

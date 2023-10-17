@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stri = prompt("nhập chuỗi")
+    let upper = 'ABCDEFGHIKLMNOPQRSTUVWXYZ';
+    let lower = 'abcdefghiklmnopqrstuvwxyz';
+    let result = [];
+    for (let i = 0; i < stri.length; i++) {
+        if (upper.includes(stri[i])) {
+            result.push(stri[i].toLowerCase());
+        } else if (lower.includes(stri[i])) {
+            result.push(stri[i].toUpperCase());
+        } else {
+            result.push(stri[i]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumber = [];
+    for (let i = 0; i < 10; i++) {
+        arrNumber[i] = +prompt("nhập vào phần tử thứ " + i);
+    }
+    document.write("các phần tử trong mảng là: " + arrNumber);
+    let v = +prompt("nhập vào phần tử v");
+    let count = 0;
+    for (let i = 0; i < arrNumber.length; i++) {
+        if (arrNumber[i] === v) {
+            arrNumber.splice(i, 1);
+        }
+    }
+    document.write("sau khi xóa phần tử bằng v là " + arrNumber);
+
+</script>
+</body>
+</html>
