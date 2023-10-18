@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập số phần tử");
+    let arrNum = [];
+    for (let i = 0; i < num; i++) {
+        arrNum[i] = prompt("nhập phần tử thứ: " + i);
+    }
+    for (let i = 0; i < arrNum.length; i++) {
+        if (arrNum[i] === "-") {
+            arrNum[i] = "_";
+        }
+    }
+    document.write(arrNum);
+</script>
+</body>
+</html>

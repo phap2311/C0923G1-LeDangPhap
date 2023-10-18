@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt("nhập phần tử thứ " + i);
+    }
+    for (let i = 0; i < 10; i++) {
+        b[i] = +prompt("nhập phần tử thứ " + i);
+    }
+    for (let i = 0; i < a.length; i++) {
+        c[i] = a[i];
+    }
+    for (let i = 0; i < b.length; i++) {
+        c[i + a.length] = b[i];
+    }
+    document.write(c);
+</script>
+</body>
+</html>

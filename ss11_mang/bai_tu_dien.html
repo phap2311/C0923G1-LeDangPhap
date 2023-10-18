@@ -15,19 +15,20 @@
         let arrEng = ["banana", "apple", "orange", "pen", "book", "table", "ruler"];
         let arrVie = ["chuối", "táo", "cam", "bút", "sách", "bàn", "thước"];
         let string = document.getElementById("string").value;
-        let index = 0;
-        let result = "";
+        let indexOfarrVie;
+        let count = 0;
         for (let i = 0; i < arrEng.length; i++) {
             if (string == arrEng[i]) {
-                index = i;
-                for (let j = 0; j < arrVie.length; j++) {
-                    if (index == j) {
-                        result = arrVie[j];
-                    }
-                }
+                indexOfarrVie = i;
+                count++;
+                break;
             }
         }
-        document.getElementById("result").innerHTML = result;
+        if (count === 1) {
+            document.getElementById("result").innerHTML = arrVie[indexOfarrVie];
+        } else {
+            document.getElementById("result").innerHTML = "vượt quá khả năng dịch";
+        }
     }
 </script>
 </body>

@@ -10,7 +10,16 @@
     for (let i = 0; i < 10; i++) {
         arrNumber[i] = +prompt("nhập phần tử thứ " + i);
     }
-    arrNumber.sort((a, b) => b - a);
+    let tempor;
+    for (let i = 0; i < arrNumber.length; i++) {
+        for (j = i + 1; j < arrNumber.length; j++) {
+            if (arrNumber[i] < arrNumber[j]) {
+                tempor = arrNumber[i];
+                arrNumber[i] = arrNumber[j];
+                arrNumber[j] = tempor;
+            }
+        }
+    }
     document.write(arrNumber);
 </script>
 </body>

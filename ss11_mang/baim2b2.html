@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập vào số lượng phần tử");
+    let arrNum = [];
+    for (let i = 0; i < num; i++) {
+        arrNum[i] = prompt("nhập vào phần tử thứ " + i);
+    }
+    document.write("dãy ký tự nhập vào là: " + arrNum + "<br>");
+    let first = 0;
+    let last = arrNum.length - 1;
+    let a = 0;
+    while (first < last) {
+        a = arrNum[first];
+        arrNum[first] = arrNum[last];
+        arrNum[last] = a;
+        first++;
+        last--;
+    }
+    document.write("dãy ký tự đảo ngược là " + arrNum.join(''));
+</script>
+</body>
+</html>

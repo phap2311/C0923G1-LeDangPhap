@@ -10,12 +10,16 @@
     for (let i = 0; i < 10; i++) {
         arrNumber[i] = +prompt("nhập vào phần tử thứ " + i);
     }
-    document.write("các phần tử trong mảng là: " + arrNumber);
+    document.write("các phần tử trong mảng là: " + arrNumber + "<br>");
     let v = +prompt("nhập vào phần tử v");
     let count = 0;
     for (let i = 0; i < arrNumber.length; i++) {
         if (arrNumber[i] === v) {
-            arrNumber.splice(i, 1);
+            for (let j = i; j < arrNumber.length - 1; j++) {
+                arrNumber[j] = arrNumber[j + 1];
+
+            }
+            arrNumber[arrNumber.length - 1] = 0;
         }
     }
     document.write("sau khi xóa phần tử bằng v là " + arrNumber);
