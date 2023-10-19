@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let starBright = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let starbright = prompt("nhập vào ngôi sao: ");
+
+    function checkStar(star) {
+        let indexOfconstellation;
+        let count = 0;
+        for (let i = 0; i < starBright.length; i++) {
+            if (star === starBright[i]) {
+                indexOfconstellation = i;
+                count++;
+                break;
+            }
+        }
+        if (count === 1) {
+            document.write(constellation[indexOfconstellation]);
+        } else {
+            document.write("không tìm thấy kết quả");
+        }
+    }
+
+    checkStar(starbright);
+
+</script>
+</body>
+</html>

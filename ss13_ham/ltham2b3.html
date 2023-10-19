@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let factorial = +prompt("nhập vào số bất kỳ cần tính giai thừa")
+    let total = 1;
+
+    function doFactorial(factorial) {
+        for (let i = 1; i <= factorial; i++) {
+            total *= i;
+        }
+        return total;
+    }
+
+    let result = doFactorial(factorial);
+    alert("giá trị giai thừa của số đó là " + result);
+</script>
+</body>
+</html>

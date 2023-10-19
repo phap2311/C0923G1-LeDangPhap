@@ -1,10 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
-</body>
-</html>
+<h3>Caro Game Simple</h3>
+<p id="carogame"></p>
+<input type="button" value="Change Value" onclick="changeValue()">
+<!--<input type="text" id="txtValue">-->
+<!--<input type="button" id="btnAdd" value="Add" onclick="add_elemet_to_array();">-->
+<!--<input type="button" id ="btnDisplay" value="Display" onclick="display_array();">-->
+<!--<div id="result"></div>-->
+<script>
+    // for(let i=0;i<100;i++)
+    // {if (i===99) {alert("Thông báo đã hoàn thành")}
+    //     document.write(i + "<br>")}
+    // let temperature = +prompt("nhập vào nhiệt độ hiện tại");
+    // while (temperature>100 || temperature<20 ){
+    //     if( temperature> 100) {alert("yêu cầu bạn giảm nhiệt độ");
+    //     temperature= +prompt("nhập lại nhiệt độ")}
+    //     else { alert("yêu cầu tăng nhiệt độ");
+    //     temperature= +prompt("nhập lại nhiệt độ")}
+    //
+    //
+    // }  alert("nhiệt độ bình thường");
+    // let a = 1
+    // let b = 2;
+    // let total;
+    // for (let i = 1; i <= a; i++) {
+    //     total = a + b;
+    //     a = b;
+    //     b = total;
+    //
+    //     if (a % 10 === 0) {
+    //         document.write("số đầu tiên chia hết cho 4 là: " + a);
+    //         break;
+    //     }
+
+    // }
+    // //
+    //     let countFibonacci =0;
+    //     let a=0;
+    //     let b=1;
+    //     let num;
+    //     let total=0;
+    //     while (countFibonacci<20){
+    //         num = a+b;
+    //         a=b;
+    //         b = num;
+    //         total+=b;
+    //         countFibonacci++;}
+    // //         document.write("giá trị của dãy 20 số làn "+ total);
+    // let countNumber = 0;
+    // let num=0;
+    // let total=0;
+    // while (countNumber < 30) {
+    //     if( num % 7 === 0) {
+    //          total+=num
+    //
+    //     }
+    //     countNumber++;
+    //     num=num+7;}
+    //
+    //     document.write("kêt quả là: " + total)
+    // let replace="";
+    // for (let i=0;i<100;i++){
+    //     if (i%15===0) {
+    //         replace= "FizzBuzz";
+    //     }
+    //     else if (i%3===0){
+    //         replace= "Fizz";
+    //     } else if (i%5===0){
+    //         replace= "Buzz"
+    //     }
+    //     else {replace=i}
+    //     document.write(replace + "<br>")
+    // }
+    //     let a = +prompt("nhập vào từ bàn phím");
+    //     let sum=1;
+    //     for (let i=1;i<=a;i++){
+    //         sum *=i;
+    //     } document.write("kết quả là: "+ sum)
+    // for (let i = 0; i < 5; i++) {
+    //     for (let j = 0; j <= i; j++) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
+    // document.write("<br>")
+    // for (let i = 0; i < 5; i++) {
+    //     for (let j = 5; j > i; j--) {
+    //         document.write("*");
+    //     }
+    //     document.write("<br>");
+    // }
+    // document.write("<br>")
+    // for (let i = 1; i <= 5; i++) {
+    //     for (j = 5; j >= 1; j--) {
+    //         if (j <= i) {
+    //             document.write("*");
+    //         } else {
+    //             document.write("&nbsp&nbsp");
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+    // for (let i = 5; i >= 1; i--) {
+    //     for (let j = 5; j >= 1; j--) {
+    //         if (j < i) {
+    //             document.write("*");
+    //         } else {
+    //             document.write("&nbsp&nbsp")
+    //         }
+    //
+    //     }document.write("<br>");
+    // }
+    //     let length= 20;
+    //     let width = 12;
+    // for (let i=0;i<length;i++){
+    //     document.write("*")}
+    // document.write("<br>");
+    // for ( let i=0;i<width;i++){
+    //     for (let j=0;j<length;j++){
+    //         if (j===0 || j === length-1)
+    //         {document.write("*")}
+    //         else { document.write("&nbsp&nbsp")}
+    //     }
+    //     document.write("<br>");
+    // }
+    // for (let i=0;i<length;i++){
+    //     document.write("*")}
+    // let x=0;
+    // let array = Array();
+    // function add_element_to_array(){
+    //     array[x]=document.getElementById("txtValue").value;
+    //     alert("Element: " + array[x]+ " Added at index " + x);
+    //     x++;
+    //     document.getElementById("txtValue").value="";
+    // }
+    //     let x = [-3,5,1,3,2,10];
+    //     let first = 0;
+    //     let last = x.length - 1;
+    //     while(first<last){
+    //         let b = x[first];
+    //         x[first]=x[last];
+    //         x[last]=b;
+    //         first++;
+    //         last--;
+    //
+    //     } document.write(x);
+    //     let value = prompt("Enter a number: ");
+    //     let numbers = [-3,5,1,3,2,10];
+    //     let index = -1;
+    //     for (let i=0;i<numbers.length;i++){
+    //         if (value == numbers[i]){
+    //             index = i;
+    //
+    //         }
+    //     }
+    //     if (index>-1){alert("value" + value + "found at " + index);
+    //
+    //     }
+    //     else {
+    //         alert("value" + value + "not found");
+    //     }
+    // let numbers = [-3, 5, 1, 3,2 , 10];
+    // let max = numbers[0];
+    // let index = 0;
+    // for (let i = 1; i < numbers.length; i++) {
+    //     if (numbers[i] > max) {
+    //         max = numbers[i];
+    //         index = i;
+    //     }
+    // // } alert("max: " + max + " at position " + index);
+    // let b= document.getElementById("carogame");
+    // let board = [];
+    // for (let i = )
+</script>

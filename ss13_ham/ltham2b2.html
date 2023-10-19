@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let radius = +prompt("nhập bán kính của hình tròn");
+
+    function doAcreage(radius) {
+        return 3.14 * radius * radius;
+    }
+
+    function doPerimeter(radius) {
+        return 3.14 * radius * 2;
+    }
+
+    let acreage = doAcreage(radius);
+    alert("Diện tích hình tròn là " + acreage);
+    let perimeter = doPerimeter(radius);
+    alert("chu vi hình tròn là: " + perimeter);
+</script>
+</body>
+</html>
