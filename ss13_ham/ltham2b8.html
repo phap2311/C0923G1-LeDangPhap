@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập số phần tử trong mảng");
+    let arr = [];
+    for (let i = 0; i < num; i++) {
+        arr[i] = prompt("nhâp phần tử thứ " + i);
+    }
+
+    function reverse() {
+        let first = 0;
+        let last = arr.length - 1;
+
+        while (first < last) {
+            let a = arr[first];
+            arr[first] = arr[last];
+            arr[last] = a;
+            first++;
+            last--;
+
+        }
+        return arr;
+    }
+
+    let result = reverse();
+    document.write("kết quả của hàm sau khi đảo ngược là: " + result);
+
+
+</script>
+</body>
+</html>
