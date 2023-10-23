@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    class Temperature {
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        getF() {
+            return "chuyển đổi từ độ C sang F là: " + (this.celsius * 1.8 + 32) + "F";
+        }
+
+        getKenvin() {
+            return "chuyển đổi từ độ C sang độ Kenvin là: " + (this.celsius + 273.15) + "K"
+        }
+    }
+
+    let temperature = new Temperature(25);
+    let f = temperature.getF();
+    let kenvin = temperature.getKenvin();
+    document.write("25: " + f + "<br>" + " 25: " + kenvin);
+
+</script>
 </body>
 </html>

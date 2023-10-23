@@ -13,15 +13,14 @@
     }
     let first = 0;
     let last = arrNumber.length - 1;
-    let a = 0;
     while (first < last) {
-        a = arrNumber[first];
+        let a = arrNumber[first];
         arrNumber[first] = arrNumber[last];
         arrNumber[last] = a;
         first++;
         last--;
     }
-    console.log(arrNumber);
+    document.write(arrNumber);
 </script>
 </body>
 </html>
