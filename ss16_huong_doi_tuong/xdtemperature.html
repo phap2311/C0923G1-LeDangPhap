@@ -11,18 +11,18 @@
             this.celsius = celsius;
         }
 
-        getF() {
+        convertToF() {
             return "chuyển đổi từ độ C sang F là: " + (this.celsius * 1.8 + 32) + "F";
         }
 
-        getKenvin() {
+        convertToK() {
             return "chuyển đổi từ độ C sang độ Kenvin là: " + (this.celsius + 273.15) + "K"
         }
     }
 
     let temperature = new Temperature(25);
-    let f = temperature.getF();
-    let kenvin = temperature.getKenvin();
+    let f = temperature.convertToF();
+    let kenvin = temperature.convertToK();
     document.write("25: " + f + "<br>" + " 25: " + kenvin);
 
 </script>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rat {
+        sound;
+        constructor(nameMouse, weightMouse, speedMouse, status) {
+            this.nameMouse = nameMouse;
+            this.weightMouse = weightMouse;
+            this.speedMouse = speedMouse;
+            this.status = status;
+        }
+
+        die() {
+            return this.status = false;
+        }
+
+        notDie() {
+            return this.status = true;
+        }
+
+        action(soundMouse) {
+            this.soundMouse = soundMouse;
+            alert(this.soundMouse)
+        }
+    }
+    class Cat{
+        sound;
+        constructor(nameCat,weightCat,speedCat,mouse) {
+            this.nameCat=nameCat;
+            this.weightCat=weightCat;
+            this.speedCat=speedCat;
+            this.rat=rat;
+        }
+        getWeightCat(){
+            return this.weightCat;
+    }
+    setSoundCat (soundCat){
+            this.soundCat=soundCat;
+    }
+    getSoundCat(){
+            alert(this.soundCat)
+    }
+    action(soundCat){
+            this.sound=soundCat;
+            alert(this.soundCat);
+    }
+    catchTheMouse(){
+            if(this.mouse.speedMouse<this.speedCat){
+                alert("Mèo bắt được chuột");
+            }
+            else {alert("Mèo không bắt được chuột")}
+
+    }
+    eatTheMouse(){
+            if(this.mouse.status)
+    }
+    }
+
+
+
+    }
+</script>
+</body>
+</html>
