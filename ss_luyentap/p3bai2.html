@@ -6,18 +6,10 @@
 </head>
 <body>
 <script>
-    let numOne = +prompt("nhập vào số phần tử của mảng 1 ")
-    let arrOne = [];
-    for (let i = 0; i < numOne; i++) {
-        arrOne[i] = +prompt("nhập vào phần tử thứ" + i);
-    }
-    let numTwo = +prompt("nhập vào số phần tử của mảng 2")
-    let arrTwo = [];
-    for (let i = 0; i < numTwo; i++) {
-        arrTwo[i] = +prompt("nhập vào phần tử thứ" + i);
-    }
-    let arrThree = [];
 
+    let arrOne = [7, 2, 5, 6];
+    let arrTwo = [7, 2, 3, 4];
+    let arrThree = [];
     for (let i = 0; i < arrTwo.length; i++) {
         let result = false;
         for (let j = 0; j < arrOne.length; j++) {
@@ -26,9 +18,9 @@
                 break;
             }
         }
-        if(!result){
+        if (!result) {
             arrThree.push(arrTwo[i]);
-    }
+        }
     }
     console.log(arrThree);
 </script>
