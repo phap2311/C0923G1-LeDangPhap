@@ -7,12 +7,23 @@
 <body>
 <script>
     class Rat {
-        sound;
-        constructor(nameMouse, weightMouse, speedMouse, status) {
+
+        status;
+        soundMouse;
+
+        constructor(nameMouse, weightMouse, speedMouse) {
             this.nameMouse = nameMouse;
             this.weightMouse = weightMouse;
             this.speedMouse = speedMouse;
-            this.status = status;
+
+        }
+
+        getStatus() {
+            if (this.status) {
+                alert("chuột sống");
+            } else {
+                alert("chuột chết");
+            }
         }
 
         die() {
@@ -23,47 +34,63 @@
             return this.status = true;
         }
 
-        action(soundMouse) {
+        actionMouse(soundMouse) {
             this.soundMouse = soundMouse;
             alert(this.soundMouse)
         }
     }
-    class Cat{
-        sound;
-        constructor(nameCat,weightCat,speedCat,mouse) {
-            this.nameCat=nameCat;
-            this.weightCat=weightCat;
-            this.speedCat=speedCat;
-            this.rat=rat;
+
+    class Cat {
+        soundCat;
+
+        constructor(nameCat, weightCat, speedCat, mouse) {
+            this.nameCat = nameCat;
+            this.weightCat = weightCat;
+            this.speedCat = speedCat;
+            this.rat = rat;
         }
-        getWeightCat(){
+
+        getWeightCat() {
             return this.weightCat;
-    }
-    setSoundCat (soundCat){
-            this.soundCat=soundCat;
-    }
-    getSoundCat(){
+        }
+
+        setSoundCat(soundCat) {
+            this.soundCat = soundCat;
+        }
+
+        getSoundCat() {
             alert(this.soundCat)
-    }
-    action(soundCat){
-            this.sound=soundCat;
+        }
+
+        action(soundCat) {
+            this.sound = soundCat;
             alert(this.soundCat);
-    }
-    catchTheMouse(){
-            if(this.mouse.speedMouse<this.speedCat){
+        }
+
+        catchTheMouse() {
+            if (this.rat.speedMouse < this.speedCat) {
                 alert("Mèo bắt được chuột");
+            } else {
+                alert("Mèo không bắt được chuột")
             }
-            else {alert("Mèo không bắt được chuột")}
 
-    }
-    eatTheMouse(){
-            if(this.mouse.status)
-    }
+        }
+
+        eatTheMouse() {
+            if (this.rat.status) {
+                this.weightCat = this.weightCat + this.rat.weightMouse;
+                this.rat.status = false;
+                alert("chuột đã bị mèo ăn");
+            }
+        }
     }
 
-
-
-    }
+    let rat = new Rat("Rat", 10, 100);
+    let cat = new Cat("Cat", 20, 200, rat)
+    rat.notDie();
+    cat.catchTheMouse();
+    cat.eatTheMouse();
+    console.log(cat.getWeightCat());
 </script>
 </body>
 </html>

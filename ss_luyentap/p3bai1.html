@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập vào số phần tử của mảng")
+    let a = [];
+    for (let i = 0; i < num; i++) {
+        a[i] = +prompt("nhập phần tử thứ: " + i);
+    }
+    let prefixSum = [];
+    let sum = 0;
+    for (let i = 0; i < a.length; i++) {
+        sum += a[i];
+        prefixSum.push(sum);
+    }
+    document.write(prefixSum)
+</script>
+</body>
+</html>

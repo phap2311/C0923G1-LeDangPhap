@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+        let num = +prompt("nhập số phần tử của mảng");
+        arr = [];
+
+        for (let i = 0; i < num; i++) {
+            arr[i] = +prompt("nhâp vào mảng phần tử thứ" + i);
+        }
+        alert(arr);
+        let increse = false;
+        let decrease = false;
+        for (let i = 0; i < arr.length ; i++) {
+            if (arr[i] < arr[i + 1]){
+                increse=true;
+            }
+            else if (arr[i] > arr[i + 1]) {
+                decrease=true;
+            }
+        }
+        if (increse && !decrease){
+            alert("ok")
+    }
+        else if (!increse && decrease){
+            alert("ok")
+        }
+        else {alert("no")}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numOne = +prompt("nhập vào số phần tử của mảng 1 ")
+    let arrOne = [];
+    for (let i = 0; i < numOne; i++) {
+        arrOne[i] = +prompt("nhập vào phần tử thứ" + i);
+    }
+    let numTwo = +prompt("nhập vào số phần tử của mảng 2")
+    let arrTwo = [];
+    for (let i = 0; i < numTwo; i++) {
+        arrTwo[i] = +prompt("nhập vào phần tử thứ" + i);
+    }
+    let arrThree = [];
+
+    for (let i = 0; i < arrTwo.length; i++) {
+        let result = false;
+        for (let j = 0; j < arrOne.length; j++) {
+            if (arrTwo[i] === arrOne[j]) {
+                result = true;
+                break;
+            }
+        }
+        if(!result){
+            arrThree.push(arrTwo[i]);
+    }
+    }
+    console.log(arrThree);
+</script>
+</body>
+</html>

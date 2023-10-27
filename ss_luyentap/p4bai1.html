@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let max = 0;
+
+    function standardize() {
+        let string = "lê văN  aN";
+        string = string.trim();
+        let a = " ";
+        for (let i = 0; i < string.length; i++) {
+            if (a[i] === "") {
+                if (a[i + 1] !== "") {
+                    a += string[i]
+                }
+            }
+        }
+        for (let i = 0; i < string.length; i++) {
+            if (a[i] === "") {
+                a += string[i].toUpperCase();
+            } else {
+                a += string[i].toLowerCase();
+            }
+        }
+    }
+        standardize();
+        console.log(a)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = "cabcaef"
+    let result = "";
+    for (let i = 0; i < string.length; i++) {
+        let count = 0;
+        for (let j = 0; j < result.length; j++) {
+            if (string[i] === result[j]) {
+                count = 1;
+                break;
+            }
+        }
+        if (count === 0) {
+            result += string[i];
+        }
+    }
+
+    console.log(result)
+</script>
+</body>
+</html>

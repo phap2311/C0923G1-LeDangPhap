@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let wage = +prompt("nhập số tiền lương của bạn đơn vị triệu");
+    if (wage >= 15) {
+        tax = 0.2 * wage;
+    } else if (wage < 15 && wage >= 7) {
+        tax = 0.1 * wage;
+    } else {
+        tax = 0.05 * wage
+    }
+    document.write("Thuế thu nhập cá nhân là: " + tax + "<br>");
+    document.write("Lương ròng thực tế nhận được: " + (wage - tax));
+</script>
+</body>
+</html>

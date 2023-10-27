@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //let num1 = +prompt("nhập vào số phần tử của mảng 1 ");
+    let numerators = [1,4,3 ,4];
+    //for (let i = 0; i < num1; i++) {
+    // numerators [i] = +prompt("nhập vào phần tử thứ" + i);
+    //  }
+    // let num2 = +prompt("nhập vào số phần tử của mảng 2 ");
+    let denominators = [2, 3,2 ,5];
+    //for (let i = 0; i < num2; i++) {
+    // denominators = +prompt("nhập vào phần tử thứ " + i)
+    // }
+    let max = (numerators[0] / denominators[0])
+    let imax =0;
+    for (let i = 0; i < numerators.length; i++) {
+
+        if (max < (numerators[i] / denominators[i])) {
+            max = (numerators[i] / denominators[i]);
+            imax = i;
+        }
+    }
+    alert(max)
+    alert(numerators[imax] + "/" + denominators[imax])
+    if (max>parseInt(max))
+alert(parseInt(max)+1)
+    else {alert(max)}
+</script>
+</body>
+</html>
