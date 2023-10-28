@@ -13,20 +13,24 @@
             arr[i][j] = +prompt("nhập vào phần tử thứ " + j)
         }
     }
-    let a;
-    let b
-    function maxmin(){
+
+    function maxmin() {
+        let max = arr[0][0]
         for (let i = 0; i < 2; i++) {
             for (let j = 0; j < num; j++) {
-            // a = Math.max(arr[i][j]);
-             b = Math.min(arr[i][j]);
+                //a = Math.max(arr[i][j]);
+                if (max<arr[i][j]){
+                    max = arr[i][j]
+                }
             }
         }
-        return b;
-    }
-    let result = maxmin();
 
-    document.write(result);
+        console.log(a)
+        console.log(b)
+    }
+
+    maxmin();
+
 
     // a = Math.max(1,2,5);
     //console.log(a)

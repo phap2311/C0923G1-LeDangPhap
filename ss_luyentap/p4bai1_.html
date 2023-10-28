@@ -7,8 +7,10 @@
 <body>
 <script>
     let string = "truonG tAn  haI";
+    console.log(string);
     let arr = string.split(" ");
     let result = [];
+
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] !== "") {
             result.push(arr[i]);
@@ -23,10 +25,21 @@
             } else {
                 str += (result[i])[j].toLowerCase();
             }
+
         }
         str += " ";
     }
     console.log(str);
+    let newArr = str.split(" ");
+    let max = newArr[0].length;
+    let index = 0;
+    for (let i = 0; i < newArr.length; i++) {
+        if (max < newArr[i].length) {
+            max = newArr[i].length;
+            index = i;
+        }
+    }
+    console.log(newArr[index]);
 </script>
 </body>
 </html>
