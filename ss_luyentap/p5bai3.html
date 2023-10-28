@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [[], []];
+    let num = +prompt("nhập vào số phần tử của mảng ");
+    for (let i = 0; i < 2; i++) {
+        for (j = 0; j < num; j++) {
+            arr[i][j] = +prompt("nhập vào phần tử thứ " + j)
+        }
+    }
+    let a;
+    let b
+    function maxmin(){
+        for (let i = 0; i < 2; i++) {
+            for (let j = 0; j < num; j++) {
+            // a = Math.max(arr[i][j]);
+             b = Math.min(arr[i][j]);
+            }
+        }
+        return b;
+    }
+    let result = maxmin();
+
+    document.write(result);
+
+    // a = Math.max(1,2,5);
+    //console.log(a)
+</script>
+</body>
+</html>

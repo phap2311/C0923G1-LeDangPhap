@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    debugger
+    let arr = [[], []]
+    let num = +prompt("nhập số phần tử trong mảng");
+    for (let i = 0; i < 2; i++) {
+        for (let j = 0; j < num; j++) {
+            arr[i][j] = +prompt("nhập vào phần tử thứ " + j)
+        }
+    }
+    console.log(arr)
+    let count = 0;
+    let count1 = 0;
+
+    function countPrime(arr) {
+        for (let i = 0; i < 2; i++) {
+            for (let j = 0; j < num; j++) {
+                for (let k = 1; k <= Math.sqrt(arr[i][j]); k++) {
+                    if (arr[i][j] % k === 0) {
+                        count++
+                    }
+                }
+                if (count === 1) {
+                    count1++
+                }
+
+            }
+        }
+        return count1;
+    }
+
+    let result = countPrime(arr);
+    document.write("Số lượng số nguyên tố trong mảng là " + result);
+</script>
+</body>
+</html>

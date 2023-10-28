@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let m = +prompt("nhập số mảng con trong mảng arr");
+    let n = +prompt("nhập số phần tử trong mảng con");
+    let arr = [[]];
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = +prompt("nhập vào phần tử thứ " + j);
+        }
+    }
+
+    function total() {
+        let sum = 0;
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                if (arr[i][j] % 2 === 0) {
+                    sum += arr[i][j];
+
+                }
+            }
+
+        }
+        return sum;
+    }
+    let result = total(arr);
+    document.write(result);
+</script>
+</body>
+</html>

@@ -11,26 +11,27 @@
     let max = 0;
 
     function standardize() {
-        let string = "lê văN  aN";
+        let string = "   lê văN  aN";
         string = string.trim();
-        let a = " ";
+        let a = "";
         for (let i = 0; i < string.length; i++) {
-            if (a[i] === "") {
-                if (a[i + 1] !== "") {
-                    a += string[i]
-                }
+            if (string[i] === " " && (string[i + 1] !== " ")) {
+                a += string[i]
             }
+            console.log(a);
         }
         for (let i = 0; i < string.length; i++) {
-            if (a[i] === "") {
-                a += string[i].toUpperCase();
+            if (a[i] === " ") {
+                a += string[i + 1];
             } else {
-                a += string[i].toLowerCase();
+                // a += string[i].toLowerCase();
             }
         }
+        console.log(a);
+
     }
-        standardize();
-        console.log(a)
+
+    standardize();
 
 </script>
 </body>

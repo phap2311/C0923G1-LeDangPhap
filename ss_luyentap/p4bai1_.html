@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = "truonG tAn  haI";
+    let arr = string.split(" ");
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== "") {
+            result.push(arr[i]);
+        }
+    }
+
+    let str = "";
+    for (let i = 0; i < result.length; i++) {
+        for (let j = 0; j < result[i].length; j++) {
+            if (j === 0) {
+                str += (result[i])[j].toUpperCase();
+            } else {
+                str += (result[i])[j].toLowerCase();
+            }
+        }
+        str += " ";
+    }
+    console.log(str);
+</script>
+</body>
+</html>

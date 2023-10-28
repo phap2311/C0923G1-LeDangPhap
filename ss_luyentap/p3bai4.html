@@ -25,6 +25,7 @@
         if (index >= 7 || index < 0) {
             alert("thoát khỏi món");
         } else {
+            alert("giá của thức uống bạn chọn vói 1 ly là: " + price[index - 1] + "k");
             let number = +prompt("nhập vào số lượng bạn muốn gọi");
             for (let i = 0; i < menu.length - 1; i++) {
                 if (index === menu[i]) {
@@ -34,6 +35,7 @@
         }
     }
 
+    choose();
 
 </script>
 </body>
