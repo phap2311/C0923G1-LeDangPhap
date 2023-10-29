@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    debugger
+
     let s1 = "aabbcc";
     let s2 = "adcaa";
     let count = 0;
@@ -16,13 +16,13 @@
         for (let j = 0; j < s2.length; j++) {
             if (s1[i] === s2[j]) {
                 s2[j] = "";
-                count++
+                count++;
                 break;
             }
 
         }
     }
-    console.log(count);
+    console.log("số ký tự chung của hai chuỗi là: "+count);
 
 </script>
 </body>

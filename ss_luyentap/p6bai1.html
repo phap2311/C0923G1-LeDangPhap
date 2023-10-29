@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Student {
+        constructor(id, name, classes, email, date, module) {
+            this.id = id;
+            this.name = name;
+            this.classes = classes;
+            this.email = email;
+            this.date = date;
+            this.module = module;
+        }
+
+        getId() {
+            return this.id
+        }
+
+        setId(id) {
+            this.id = id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getClasses() {
+            return this.classes;
+        }
+
+        setClasses(classes) {
+            this.classes = classes;
+        }
+
+        getEmail() {
+            return this.email;
+        }
+
+        setEmail(email) {
+            this.email = email;
+        }
+
+        getDate() {
+            return this.date;
+        }
+
+        setDate(date) {
+            this.date = date;
+        }
+
+        getModule() {
+            return this.module;
+        }
+
+        setModule(module) {
+            this.module = module;
+        }
+
+        addStudent() {
+        };
+
+    }
+
+    let student1 = new Student("HV-0001", "Nguyễn Văn A", "C1022G1", "nguyenvana@gmail.com", "01/01/2004");
+    let student2 = new Student("HV-0002", "Nguyễn Văn B", "C1122G1", "nguyenvanb@gmail.com", "02/02/2004");
+    let student3 = new Student("HV-0003", "Nguyễn Văn C", "C1222G1", "nguyenvanc@gmail.com", "03/03/2004");
+    document.write();
+
+
+
+</script>
+</body>
+</html>

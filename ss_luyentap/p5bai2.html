@@ -6,27 +6,28 @@
 </head>
 <body>
 <script>
-    debugger
     let arr = [[], []]
     let num = +prompt("nhập số phần tử trong mảng");
     for (let i = 0; i < 2; i++) {
         for (let j = 0; j < num; j++) {
-            arr[i][j] = +prompt("nhập vào phần tử thứ " + j)
+            arr[i][j] = +prompt("nhập vào phần tử thứ " + j);
         }
     }
-    console.log(arr)
     let count = 0;
     let count1 = 0;
+    let newArr = [];
 
     function countPrime(arr) {
         for (let i = 0; i < 2; i++) {
             for (let j = 0; j < num; j++) {
+                count = 0;
                 for (let k = 1; k <= Math.sqrt(arr[i][j]); k++) {
                     if (arr[i][j] % k === 0) {
                         count++
                     }
                 }
                 if (count === 1) {
+                    newArr.push(arr[i][j]);
                     count1++
                 }
             }
@@ -35,7 +36,8 @@
     }
 
     let result = countPrime(arr);
-    document.write("Số lượng số nguyên tố trong mảng là " + result);
+    console.log("Số lượng số nguyên tố trong mảng là " + result);
+    console.log("mảng chứa các số nguyên tố là: " + newArr)
 </script>
 </body>
 </html>

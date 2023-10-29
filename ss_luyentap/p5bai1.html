@@ -6,10 +6,9 @@
 </head>
 <body>
 <script>
-
     let m = +prompt("nhập số mảng con trong mảng arr");
     let n = +prompt("nhập số phần tử trong mảng con");
-    let arr = [[]];
+    let arr = [];
     for (let i = 0; i < m; i++) {
         arr[i] = [];
         for (let j = 0; j < n; j++) {
@@ -30,8 +29,9 @@
         }
         return sum;
     }
+
     let result = total(arr);
-    document.write(result);
+    document.write("Tổng các số chẵn trong mảng trên là: " + result);
 </script>
 </body>
 </html>
