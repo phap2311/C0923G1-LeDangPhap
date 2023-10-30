@@ -4,7 +4,53 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    table, th, tr, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 600px;
+    }
+</style>
 <body>
+
+<label>
+    <button onclick="addNewStudent()">Thêm mới học viên</button>
+    <button onclick="editStudent">Sửa thông tin học viên</button>
+    <button onclick="deleteStudent">Xóa học viên</button>
+    <br><br>
+</label>
+
+<table border="1">
+    <tr>
+        <td>Mã học viên</td>
+        <td>Tên</td>
+        <td>Lớp</td>
+        <td>Email</td>
+        <td>Ngày sinh</td>
+    </tr>
+    <tr>
+        <td>HV-0001</td>
+        <td>Nguyễn Văn A</td>
+        <td>C1022G1</td>
+        <td>nguyenvana@gmail.com</td>
+        <td>01/01/2002</td>
+    </tr>
+    <tr>
+        <td>HV-0002</td>
+        <td>Nguyễn Văn B</td>
+        <td>C1022G1</td>
+        <td>nguyenvanb@gmail.com</td>
+        <td>01/01/2003</td>
+    </tr>
+    <tr>
+        <td>HV-0003</td>
+        <td>Nguyễn Văn C</td>
+        <td>C1022G1</td>
+        <td>nguyenvanc@gmail.com</td>
+        <td>01/01/2004</td>
+    </tr>
+    <tbody id="information"></tbody>
+</table>
 <script>
     class Student {
         constructor(id, name, classes, email, date, module) {
@@ -69,13 +115,30 @@
 
     }
 
-    let student1 = new Student("HV-0001", "Nguyễn Văn A", "C1022G1", "nguyenvana@gmail.com", "01/01/2004");
-    let student2 = new Student("HV-0002", "Nguyễn Văn B", "C1122G1", "nguyenvanb@gmail.com", "02/02/2004");
-    let student3 = new Student("HV-0003", "Nguyễn Văn C", "C1222G1", "nguyenvanc@gmail.com", "03/03/2004");
-    document.write();
+    function addNewStudent() {
+        let getId = prompt("nhập mã học viên: ");
+        let getName = prompt("nhập họ và tên học viên")
+        let getClasses = prompt("nhập lớp của học viên")
+        let getEmail = prompt("nhập email của học viên")
+        let getDate = prompt("nhập ngày sinh của học viên")
 
+        document.getElementById("information").innerHTML += `<table border="1"><tr>
+            <td>${getId}</td>
+            <td>${getName}</td>
+            <td>${getClasses}</td>
+            <td>${getEmail}</td>
+            <td>${getDate}</td>
+            </tr></table>`;
+
+    }
+
+    // function editStudent(){
+    //  let editIndex = prompt("Nhâp mã số sinh viên cần sửa: ");
+    //  if
+    // }
 
 
 </script>
+
 </body>
 </html>

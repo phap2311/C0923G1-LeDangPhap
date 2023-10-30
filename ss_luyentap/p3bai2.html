@@ -8,21 +8,15 @@
 <script>
 
     let arrOne = [7, 2, 5, 6];
-    let arrTwo = [7, 2, 3, 4];
-    let arrThree = [];
+    let arrTwo = [7, 4, 8, 2, 3, 4];
+    let result = [];
     for (let i = 0; i < arrTwo.length; i++) {
-        let result = false;
-        for (let j = 0; j < arrOne.length; j++) {
-            if (arrTwo[i] === arrOne[j]) {
-                result = true;
-                break;
-            }
-        }
-        if (!result) {
-            arrThree.push(arrTwo[i]);
+        if (!arrOne.includes(arrTwo[i]) && !result.includes(arrTwo[i])) {
+            result.push(arrTwo[i])
         }
     }
-    console.log(arrThree);
+    document.write(result);
+
 </script>
 </body>
 </html>

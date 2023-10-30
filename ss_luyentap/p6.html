@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+  <label>
+    <button onclick="addStudent()">Thêm mới học viên</button>
+    <button onclick="editStudent()">Sửa thông tin học viên</button>
+    <button onclick="deleteStudent()">Xóa học viên</button>
+  </label>
+</div>
+<br>
+<p id="root"></p>
+
+<script>
+  class HocSinh {
+    constructor(code, name, room, email, day, mouDul) {
+      this.code = code;
+      this.name = name;
+      this.room = room;
+      this.email = email;
+      this.day = day;
+      this.mouDul = mouDul;
+    }
+
+    getCode() {
+      return this.code;
+    }
+
+    setCode(code) {
+      this.code = code;
+    }
+
+    getName() {
+      return this.name;
+    }
+
+    setName(name) {
+      this.name = name;
+    }
+
+    getRoom() {
+      return this.room;
+    }
+
+    setRoom(room) {
+      this.room = room;
+    }
+
+    getEmail() {
+      return this.email;
+    }
+
+    setEmail(email) {
+      this.email = email;
+    }
+
+    getDay() {
+      return this.day;
+    }
+
+    setDay(day) {
+      this.day = day;
+
+    }
+
+    getMouDul() {
+      return this.mouDul;
+    }
+
+    setMouDul(mouDul) {
+      this.mouDul = mouDul;
+    }
+  }
+
+  let nguyenTrucVi = new HocSinh(
+          `HV-0001`,
+          `Nguyen Truc Vi`,
+          `C0823G1`,
+          `abc@gmail.com`,
+          `1/1/2023`,
+          `MouDul1`
+  );
+  let leVanDo = new HocSinh(
+          `HV-0002`,
+          `Le Van Do`,
+          `C0823G1`,
+          `abc@gmail.com`,
+          `1/1/2023`,
+          `MouDul1`);
+  let leVanNhatBao = new HocSinh(
+          `HV-0003`,
+          `Le Van Nhat Bao`,
+          `C0823G1`,
+          `abc@gmail.com`,
+          `1/1/2023`,
+          `MouDul1`);
+  let tranKimTieuVi = new HocSinh(
+          `HV-0004`,
+          `Tran Kim Tieu Vi`,
+          `C0823G1`,
+          `abc1@gmail.com`,
+          `1/1/2023`,
+          `MouDul1`);
+  let danhSachHocSinh = [nguyenTrucVi, leVanDo, leVanNhatBao, tranKimTieuVi];
+
+  function displaySchool() {
+    let studentTable = ``;
+    studentTable += `<table border="1">
+    <tr>
+    <td>mã học viên</td>
+    <td>Tên</td>
+    <td>Lớp</td>
+    <td>Email</td>
+    <td>Ngày sinh</td>
+</tr>`
+    for (let i = 0; i < danhSachHocSinh.length; i++) {
+      let hocSinh = danhSachHocSinh[i];
+      studentTable += `<tr>
+            <td>${hocSinh.getCode()}</td>
+            <td>${hocSinh.getName()}</td>
+            <td>${hocSinh.getRoom()}</td>
+            <td>${hocSinh.getEmail()}</td>
+            <td>1/1/2023</td>
+        </tr>`
+    }
+    studentTable += `</table>`
+    document.getElementById('root').innerHTML = studentTable;
+
+  }
+
+  displaySchool();
+  let arrStd = []
+  let countId = 1
+  let idStd;
+
+  function addStudent() {
+    idStd = 'C0823G1: ' + countId;
+    let code = prompt("Nhập mã học viên : ")
+    let name = prompt("nhập tên học viên")
+    let room = prompt("Nhập lớp của bạn : ")
+    let email = prompt(" Nhập địa chỉ Email : ")
+    let day = prompt(" Nhập ngày sinh : ")
+
+    danhSachHocSinh = new Student(code, name, room, email, day, mouDul)
+    arrStd.push(Student)
+    countId++;
+    console.log(arrStd)
+    displaySchool()
+  }
+
+  function checkLengthName() {
+    let name = prompt("Nhập Đầy đủ họ tên : ")
+    while (name.length > 50) {
+      name = prompt("Nhập Đầy đủ họ tên phải dưới 50 kí tự : ")
+    }
+    return name;
+  }
+
+  function checkModule() {
+    debugger
+    let module = +prompt(" Nhập module : ")
+    if (!isNaN(module)) {
+      while (module < 1 || module > 6) {
+        module = prompt("Yêu cầu module chỉ từ 1 - 6  :  ");
+      }
+      return module;
+    }
+    while (isNaN(module)) {
+      module = +prompt("Yêu cầu nhập số!!!")
+    }
+    while (module < 1 || module > 6) {
+      module = prompt("Yêu cầu module chỉ từ 1 - 6  :  ");
+      while (isNaN(module)) {
+        module = +prompt("Yêu cầu nhập số!!!")
+      }
+    }
+    return module;
+  }
+
+  function deleteStudent() {
+    let deleteIndex = prompt("Nhập mã số sinh viên cần xóa");
+    if (deleteIndex === null) {
+      return displayContent()
+    }
+    let flag = 0;
+
+    for (let i = 0; i < arrStd.length; i++) {
+      if (deleteIndex === arrStd[i].getId()) {
+        let checkDelete = confirm(`Bạn có muốn xóa sinh viên tên : ${arrStd[i].getName()} hay không!!!`);
+        if (checkDelete) {
+          arrStd.splice(i, 1);
+          flag = 1;
+          alert("Xóa thành công!!!")
+          return displaySchool()
+        } else if (checkDelete === false) {
+          alert("Hủy xóa!!!")
+          return displaySchool();
+        }
+      }
+    }
+    if (flag === 0) {
+      alert(`Không tìm thấy mã số sinh viên : ${deleteIndex}`)
+      return displaySchool();
+    }
+  }
+
+  function editStudent() {
+    let editIndex = prompt("Nhập mã số sinh viên cần sửa : ");
+    if (editIndex === null) {
+      return displaySchool()
+    }
+    let flag = 0;
+    for (let i = 0; i < arrStd.length; i++) {
+      if (editIndex === arrStd[i].getId()) {
+        flag = 1;
+        let code = prompt("Nhập mã học viên : ")
+        let name = checkLengthName()
+        let room = prompt("Nhập lớp của bạn : ")
+        let email = prompt(" Nhập địa chỉ Email : ")
+        let day = prompt(" Nhập ngày sinh : ")
+        let mouDul = checkModule()
+        arrStd[i].setFullInfo(code, name, room, email, day, mouDul)
+        alert("Cập nhập thành công !!!");
+        break;
+      }
+    }
+    if (flag === 0) {
+      alert(`Mã số sinh viên ${editIndex} không tồn tại!!!`)
+    }
+    displaySchool();
+  }
+</script>
+</body>
+</html>
