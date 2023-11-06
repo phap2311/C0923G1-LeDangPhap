@@ -8,7 +8,7 @@ public class CurrencyConvert {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter money: ");
         money = scanner.nextInt();
-        int rate = money * 23000;
-        System.out.printf(money + " USD equals " + rate + " VND ");
+        int usd = money * 23000;
+        System.out.printf(money + " USD equals " + usd + " VND ");
     }
 }

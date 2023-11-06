@@ -23,7 +23,7 @@ public class NumbersIntoWord {
         } else if (number >= 40 && number < 99) {
             System.out.printf("%d is %sty %s ", number, num[number / 10], num[number % 10]);
         } else if (number >= 100 && number <= 113) {
-            System.out.printf("%d is %shundred %s ", number, num[number / 100], num[number % 100]);
+            System.out.printf("%d is %shundred and %s ", number, num[number / 100], num[number % 100]);
         } else if (number >= 114 && number <= 119) {
             System.out.printf("%d is %shundred %steen ", number, num[number / 100], num[(number % 100) % 10]);
         } else if (number >= 120 && number <= 129) {
