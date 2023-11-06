@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("nhập vào số lượng phần tử");
+    let arrNumber = [];
+    for (let i = 0; i < number; i++) {
+        arrNumber[i] = prompt("nhập vào phần tử thứ " + i)
+    }
+    let first = 0;
+    let last = arrNumber.length - 1;
+    while (first < last) {
+        let a = arrNumber[first];
+        arrNumber[first] = arrNumber[last];
+        arrNumber[last] = a;
+        first++;
+        last--;
+    }
+    document.write(arrNumber);
+</script>
+</body>
+</html>

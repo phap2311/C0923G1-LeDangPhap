@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    let menu = "Nhập vào vị trí thức uống \n"+
+        "1.Cafe \n"+
+        "2.Cam vắt \n"+
+        "3.Nước ép cà rốt \n"+
+        "4.Nước ép cà chua \n"+
+        "5.Nuớc lọc \n"+
+        "6.Nước dừa \n"+
+        "7.Tính tiền"
+    let choose;
+    let cafePrice = 15000;
+    let orangePrice = 20000;
+    let carrotPrice = 25000;
+    let tomatoPrice = 25000;
+    let waterPrice = 10000;
+    let coconutPrice = 15000;
+    let count;
+    let total=0;
+    do { choose = +prompt(menu);
+            if (choose>0&&choose<7)
+    {
+        count = parseInt(prompt("nhập vào số lượng ly muốn mua"))
+    }
+    switch (choose) {
+        case 1:
+            total += cafePrice * count;
+            break;
+        case 2:
+            total += orangePrice * count;
+            break;
+        case 3:
+            total += carrotPrice * count;
+            break;
+        case 4:
+            total += tomatoPrice * count;
+            break;
+        case 5:
+            total += waterPrice * count;
+            break;
+        case 6:
+            total += coconutPrice * count;
+            break;
+    }
+    }
+    while (choose!==7);
+    alert("tổng tiền: " + total + "k")
+
+
+
+</script>
+</body>
+</html>

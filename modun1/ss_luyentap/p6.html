@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <str>
+        <td>Mã học viên</td>
+        <td>Tên</td>
+        <td>Lớp</td>
+        <td>Email</td>
+        <td>Ngày sinh</td>
+        <td>Module</td>
+    </str>
+</table>
+<div id="result"></div>
+<script>
+    class Student {
+        constructor(code, name, className, email) {
+            this.code = code;
+            this.name = name;
+            this.className = className;
+            this.email = email;
+
+        }
+
+        getCode() {
+            return this.code;
+        }
+
+        setCode(newCode) {
+            this.code = newCode;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(newName) {
+            this.name = newName;
+        }
+
+        getClassName() {
+            return this.ClassName;
+        }
+
+        setClassName(newClassName) {
+            this.code = newClassName;
+        }
+
+        getEmail() {
+            return this.email;
+        }
+
+        setEmail(newEmail) {
+            this.email = newEmail;
+        }
+    }
+
+    let arrStudent = [];
+    let student = new Student("hv1", "hong tham", "c12", "hongtham@");
+    let student1 = new Student("hv2", "tieu vi", "c11", "tieuvi@");
+    let student2 = new Student("hv3", "gia huy", "c10", "giahuy@");
+
+    student.setEmail("dnagphap")
+    console.log(student.getEmail())
+
+    //console.log(student.setEmail());
+
+</script>
+
+
+</body>
+</html>

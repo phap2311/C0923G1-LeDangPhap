@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    table, th, tr, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 600px;
+    }
+</style>
+<body>
+
+<label>
+    <button onclick="addStudent()">Thêm mới học viên</button>
+    <button onclick="editStudent()">Sửa thông tin học viên</button>
+    <button onclick="removeStudent()">Xóa học viên</button>
+    <br><br>
+</label>
+
+
+<div id="result"></div>
+
+<script>
+    class Student {
+        constructor(code, name, classes, email, date, module) {
+            this.code = code;
+            this.name = name;
+            this.classes = classes;
+            this.email = email;
+            this.date = date;
+            this.module = module;
+        }
+
+        getCode() {
+            return this.code;
+        }
+
+        setCode(newCode) {
+            this.code = newCode;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(newName) {
+            this.name = newName;
+        }
+
+        getClasses() {
+            return this.classes;
+        }
+
+        setClasses(newClasses) {
+            this.classes = newClasses;
+        }
+
+        getEmail() {
+            return this.email;
+        }
+
+        setEmail(newEmail) {
+            this.email = newEmail;
+        }
+
+        getDate() {
+            return this.date;
+        }
+
+        setDate(newDate) {
+            this.date = newDate;
+        }
+
+        getModule() {
+            return this.module;
+        }
+
+        setModule(newModule) {
+            this.module = newModule;
+        }
+
+        toString() {
+            return "mã học viên: " + this.code + "tên: " + this.name + "lớp: " + this.classes + "Email: " + this.email + "Birthday: " + this.date + "modun: " + this.module;
+        }
+    }
+
+    let arrStudent = [];
+    let student = new Student("HV-001", "Hồng Thắm", "C0923G1", "hongtham@", "01/01/1998", "1");
+    let student1 = new Student("HV-002", "trúc vi", "C0923G1", "trucvi@", "01/01/2005", "1");
+    let student2 = new Student("HV-003", "gia huy", "C0923G1", "giahuy@", "01/01/1997", "1");
+    arrStudent.push(student, student1, student2)
+
+    function displayTable(arr) {
+        let str = " <table border=\"1px\">\n" +
+            "    <tr>\n" +
+            "        <td>Mã học viên</td>\n" +
+            "        <td>Tên</td>\n" +
+            "        <td>Lớp</td>\n" +
+            "        <td>Email</td>\n" +
+            "        <td>Ngày sinh</td>\n" +
+            "        <td>Module</td>\n" +
+            "    </tr>\n"
+        for (let i = 0; i < arr.length; i++) {
+            str += "<tr>" +
+                "<td>" + arr[i].getCode() + "</td>" +
+                "<td>" + arr[i].getName() + "</td>" +
+                "<td>" + arr[i].getClasses() + "</td>" +
+                "<td>" + arr[i].getEmail() + "</td>" +
+                "<td>" + arr[i].getDate() + "</td>" +
+                "<td>" + arr[i].getModule() + "</td>" +
+                "</tr>";
+        }
+        str += "</table> ";
+        document.getElementById("result").innerHTML = str;
+    }
+    displayTable(arrStudent);
+function addStudent(){
+    let code = prompt("nhập mã học viên");
+    let name = prompt("nhập tên học viên");
+    let classes = prompt("nhập lớp học viên");
+    let email = prompt("nhập email học viên");
+    let date = prompt("nhập ngày sinh học viên");
+    let module = prompt("nhập module học viên");
+    let student3 = new Student(code,name,classes,email,date,module);
+    arrStudent.push(student3)
+    displayTable(arrStudent)
+}
+function editStudent(){
+    let code = prompt("nhập ma học viên cần sửa");
+    let count =0;
+    for (let i=0;i<arrStudent.length;i++){
+        if (code === arrStudent[i].getCode()){
+           count++;
+            let code = prompt("nhập mã học viên");
+            let name = prompt("nhập tên học viên");
+            let classes = prompt("nhập lớp học viên");
+            let email = prompt("nhập email học viên");
+            let date = prompt("nhập ngày sinh học viên");
+            let module = prompt("nhập module học viên");
+            arrStudent[i] = new Student(code,name,classes,email,date,module);
+            break;
+        }
+
+    }
+    displayTable(arrStudent)
+    if(count!==1){
+        alert("mã học viên không tồn tại")
+    }
+
+}
+function removeStudent(){
+    let code = prompt("nhập vào mã học viên cần xóa");
+    let count =0;
+    for (let i = 0; i < arrStudent.length; i++) {
+        if(code === arrStudent[i].getCode()){
+            count++;
+            let choice = confirm("bạn có muốn xóa không");
+            if (choice){
+                arrStudent.splice(i,1)
+            }
+            break
+        }
+    }
+    displayTable(arrStudent)
+    if(count!==1){
+        alert("mã học viên không tồn tại");
+    }
+}
+
+</script>
+
+</body>
+</html>

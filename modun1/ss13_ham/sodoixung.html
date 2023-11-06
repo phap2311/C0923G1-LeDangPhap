@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("nhập số phần tử");
+    let arr = [];
+    for (let i = 0; i < num; i++) {
+        arr[i] = prompt("nhập phần tử thứ  " + i);
+    }
+
+    function isPalidrome(arr) {
+        let first = 0;
+        let last = arr.length - 1;
+
+        while (first < last) {
+            if (arr[first] === arr[last]) {
+                first++;
+                last--
+            } else {
+                return false
+            }
+        }
+        return true;
+    }
+
+    if (isPalidrome(arr)) {
+        document.write("từ đối xứng")
+    } else {
+        document.write("từ không đối xứng")
+
+    }
+
+</script>
+</body>
+</html>
