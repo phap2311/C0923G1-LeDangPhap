@@ -10,8 +10,6 @@ public class ElementIsRemoved {
         int[] arr = {10, 4, 6, 7, 8, 6, 0, 0, 0};
         int x;
         Scanner scanner = new Scanner(System.in);
-
-
         System.out.println("Enter x: ");
         x = scanner.nextInt();
         int index = 0;

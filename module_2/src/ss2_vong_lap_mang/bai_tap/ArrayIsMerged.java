@@ -26,13 +26,10 @@ public class ArrayIsMerged {
             }
         }
         for (int i = array.length; i < arrTotal.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                if (j == i - array.length) {
-
-                    arrTotal[i] = arr[j];
-                }
-            }
+            arrTotal[i] = arr[i - array.length];
         }
+
+
         System.out.println(Arrays.toString(arrTotal));
     }
 }

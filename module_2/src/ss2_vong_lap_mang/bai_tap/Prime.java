@@ -12,9 +12,9 @@ public class Prime {
         int n = 2;
         System.out.printf("%d prime ís : ", (numbers + 1));
         System.out.println();
-
+        int count;
         while (countPrime < numbers) {
-            int count = 0;
+            count = 0;
             for (int i = 2; i <= Math.sqrt(n); i++) {
                 if (n % i == 0) {
                     count++;

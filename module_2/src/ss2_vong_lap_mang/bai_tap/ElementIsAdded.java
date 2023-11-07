@@ -11,17 +11,18 @@ public class ElementIsAdded {
         int n;
         System.out.println("Enter n: ");
         n = scanner.nextInt();
-        array = new int[n];
-        for (int i = 0; i < array.length; i++) {
-            System.out.println("Enter element" + i + " : ");
-            array[i] = scanner.nextInt();
-        }
         int x;
         System.out.println("Enter x: ");
         x = scanner.nextInt();
         int index;
         System.out.println("Enter index: ");
         index = scanner.nextInt();
+        array = new int[n];
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Enter element" + i + " : ");
+            array[i] = scanner.nextInt();
+        }
+
         while (index <= -1 || index >= array.length - 1) {
             System.out.println("Enter index: ");
             index = scanner.nextInt();
@@ -37,16 +38,15 @@ public class ElementIsAdded {
             }
 
         }
-        for (int i = index; i < arr.length; i++) {
-            for (int j = index; j < array.length; j++) {
-                if (i == j) {
-                    arr[index] = x;
-                    arr[i + 1] = array[j];
-                }
-            }
+        for (int i = index; i < arr.length - 1; i++) {
+            arr[i + 1] = array[i];
 
         }
-
+        arr[index] = x;
         System.out.println(Arrays.toString(arr));
     }
+
 }
+
+
+
