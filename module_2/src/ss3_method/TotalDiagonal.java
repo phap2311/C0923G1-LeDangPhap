@@ -14,12 +14,7 @@ public class TotalDiagonal {
             }
         }
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                if (i == j) {
-                    total += array[i][j];
-                }
-            }
-
+            total += array[i][i];
         }
         return total;
     }

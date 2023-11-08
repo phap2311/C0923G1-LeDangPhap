@@ -16,12 +16,7 @@ public class TotalColumn {
             }
         }
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                if (index == j) {
-                    total += array[i][j];
-                }
-            }
-
+            total += array[i][index];
         }
         return total;
 
