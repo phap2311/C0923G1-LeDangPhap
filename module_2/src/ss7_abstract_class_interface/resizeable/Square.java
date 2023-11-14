@@ -24,16 +24,6 @@ public class Square extends Rectangle implements Resizeable {
     }
 
     @Override
-    public void setWidth(double width) {
-        setSide(width);
-    }
-
-    @Override
-    public void setLength(double length) {
-        setSide(length);
-    }
-
-    @Override
     public String toString() {
         return "Square {" +
                 "side=" + getSide() +
@@ -51,6 +41,5 @@ public class Square extends Rectangle implements Resizeable {
         square.resize(0.2);
         System.out.println(square);
     }
-
-
+    
 }
