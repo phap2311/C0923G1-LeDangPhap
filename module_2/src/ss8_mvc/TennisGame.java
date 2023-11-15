@@ -2,7 +2,14 @@ package ss8_mvc;
 
 
 public class TennisGame {
-    public static String getScore(String firstPlayerName, String secondPlayerName, int firstPlayerScore,int secondPlayerScore) {
+    static String LOVE = "Love";
+    static String FIFTEEN = "Fifteen";
+    static String THIRTY = "Thirty";
+    static String FORTY = "Forty";
+    static String DEUCE = "Deuce";
+    static String ALL = "-ALL";
+
+    public static String getScore(String firstPlayerName, String secondPlayerName, int firstPlayerScore, int secondPlayerScore) {
 
         boolean isDraw = firstPlayerScore == secondPlayerScore;
         boolean isEnd = firstPlayerScore >= 4 || secondPlayerScore >= 4;
@@ -15,22 +22,22 @@ public class TennisGame {
         return calledScore;
     }
 
-    private static String getGameDrawCalledScore(int drawScore) {
+    public static String getGameDrawCalledScore(int drawScore) {
         switch (drawScore) {
             case 0:
-                return "Love-All";
+                return LOVE + ALL;
             case 1:
-                return "Fifteen-All";
+                return FIFTEEN + ALL;
             case 2:
-                return "Thirty-All";
+                return THIRTY + ALL;
             case 3:
-                return "Forty-All";
+                return FORTY + ALL;
             default:
-                return "Deuce";
+                return DEUCE;
         }
     }
 
-    private static String getGameEndCalledScore(int firstPlayerScore, int secondPlayerScore) {
+    public static String getGameEndCalledScore(int firstPlayerScore, int secondPlayerScore) {
 
         int distanceResult = firstPlayerScore - secondPlayerScore;
 
@@ -40,17 +47,18 @@ public class TennisGame {
         return "Win for second player";
     }
 
-    private static String getPlayerCalledScore(int playerScore) {
+    public static String getPlayerCalledScore(int playerScore) {
         switch (playerScore) {
             case 0:
-                return "Love";
+                return LOVE;
             case 1:
-                return "Fifteen";
+                return FIFTEEN;
             case 2:
-                return "Thirty";
+                return THIRTY;
             default:
-                return "Forty";
+                return FORTY;
         }
 
     }
+
 }
