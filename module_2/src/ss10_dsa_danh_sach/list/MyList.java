@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MyList<E> {
     private int size = 0;
     static final int DEFAULT_CAPCITY = 10;
-    Object[] elements;
+    private Object[] elements;
 
     public MyList() {
         elements = new Object[DEFAULT_CAPCITY];

@@ -1,3 +1,5 @@
+package ss_11_dsa_stack_queue;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
