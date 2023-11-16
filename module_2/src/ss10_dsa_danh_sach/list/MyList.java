@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MyList<E> {
     private int size = 0;
     static final int DEFAULT_CAPCITY = 10;
-    public Object elements[];
+    Object[] elements;
 
     public MyList() {
         elements = new Object[DEFAULT_CAPCITY];
@@ -25,7 +25,7 @@ public class MyList<E> {
 
     public void clear() {
         size = 0;
-        for (int i = 0; i < elements.length; i++) {
+        for (int i = 0; i < size; i++) {
             elements[i] = null;
 
         }
@@ -42,14 +42,13 @@ public class MyList<E> {
     }
 
     public void add(E element, int index) {
-        if (index > elements.length) {
+        if (index > size) {
             throw new IllegalArgumentException("index" + index);
         } else if (elements.length == size) {
             this.ensureCapacity(5);
         }
-        if (elements[index] == null) {
-            elements[index] = element;
-            size++;
+        if (elements[size] == null) {
+            add(element);
         } else {
             for (int i = size + 1; i >= index; i--) {
                 elements[i] = elements[i - 1];
@@ -61,7 +60,12 @@ public class MyList<E> {
     }
 
     public E get(int index) {
-        return (E) elements[index];
+
+        if (index < size && index >= 0) {
+            return (E) elements[index];
+        } else {
+            throw new IllegalArgumentException();
+        }
     }
 
     public int indexOf(E element) {

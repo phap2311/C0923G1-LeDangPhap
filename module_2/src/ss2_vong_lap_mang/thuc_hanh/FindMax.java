@@ -6,6 +6,6 @@ public class FindMax {
     public static void main(String[] args) {
      int size;
      int [] array;
-        Scanner scanner = new Scanner(System.in)
+        Scanner scanner = new Scanner(System.in);
     }
 }

@@ -41,5 +41,5 @@ public class Square extends Rectangle implements Resizeable {
         square.resize(0.2);
         System.out.println(square);
     }
-    
+
 }
