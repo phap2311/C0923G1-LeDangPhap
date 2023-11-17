@@ -16,7 +16,7 @@ public class DecimalTranferBinary {
                 binary.push(0);
             } else {
                 binary.push(1);
-            }
+            } 
         }
 
         while (!binary.empty()) {
