@@ -1,4 +1,4 @@
-package ss12_java_collection_framework.view;
+package ss12_java_collection_framework.bai2.view;
 
 import java.util.Scanner;
 

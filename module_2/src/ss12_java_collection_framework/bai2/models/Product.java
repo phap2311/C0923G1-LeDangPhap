@@ -1,4 +1,4 @@
-package ss12_java_collection_framework.models;
+package ss12_java_collection_framework.bai2.models;
 
 public class Product {
     private String code;

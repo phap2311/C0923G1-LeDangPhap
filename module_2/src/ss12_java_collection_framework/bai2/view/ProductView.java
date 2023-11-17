@@ -1,7 +1,7 @@
-package ss12_java_collection_framework.view;
+package ss12_java_collection_framework.bai2.view;
 
-import ss12_java_collection_framework.constrollers.ProductController;
-import ss12_java_collection_framework.models.Product;
+import ss12_java_collection_framework.bai2.constrollers.ProductController;
+import ss12_java_collection_framework.bai2.models.Product;
 
 import java.util.List;
 import java.util.Scanner;

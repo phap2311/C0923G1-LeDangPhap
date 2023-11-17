@@ -1,6 +1,6 @@
-package ss12_java_collection_framework.repositories;
+package ss12_java_collection_framework.bai2.repositories;
 
-import ss12_java_collection_framework.models.Product;
+import ss12_java_collection_framework.bai2.models.Product;
 
 import java.util.List;
 

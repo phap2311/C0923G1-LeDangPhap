@@ -1,7 +1,6 @@
-package ss12_java_collection_framework.repositories;
+package ss12_java_collection_framework.bai2.repositories;
 
-import ss10_dsa_danh_sach.list.MyList;
-import ss12_java_collection_framework.models.Product;
+import ss12_java_collection_framework.bai2.models.Product;
 
 import java.util.ArrayList;
 import java.util.List;

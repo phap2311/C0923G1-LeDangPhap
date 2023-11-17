@@ -1,8 +1,8 @@
-package ss12_java_collection_framework.constrollers;
+package ss12_java_collection_framework.bai2.constrollers;
 
-import ss12_java_collection_framework.models.Product;
-import ss12_java_collection_framework.services.IProductService;
-import ss12_java_collection_framework.services.ProductService;
+import ss12_java_collection_framework.bai2.models.Product;
+import ss12_java_collection_framework.bai2.services.IProductService;
+import ss12_java_collection_framework.bai2.services.ProductService;
 
 import java.util.List;
 
