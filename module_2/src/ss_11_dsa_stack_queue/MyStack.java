@@ -26,6 +26,8 @@ public class MyStack {
         while (!wStack.empty()) {
             System.out.println(wStack.pop());
         }
+
+
     }
 }
 

@@ -14,7 +14,9 @@ public class DecimalTranferBinary {
         for (int i = decimal; i >= 1; i = i / 2) {
             if (i % 2 == 0) {
                 binary.push(0);
-            } else binary.push(1);
+            } else {
+                binary.push(1);
+            }
         }
 
         while (!binary.empty()) {
