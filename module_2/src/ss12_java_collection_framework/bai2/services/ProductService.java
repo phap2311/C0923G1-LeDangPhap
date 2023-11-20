@@ -28,4 +28,24 @@ public class ProductService implements IProductService {
     public void remove(String code) {
         productRepository.remove(code);
     }
+
+    @Override
+    public Product findByEditCode(String editCode) {
+        return productRepository.findByEditCode(editCode);
+    }
+
+    @Override
+    public void add(Product product1) {
+        productRepository.add(product1);
+    }
+
+    @Override
+    public void removeE(String editCode) {
+        productRepository.removeE(editCode);
+    }
+
+    @Override
+    public Product findByCodeSearch(String codeSearch) {
+        return productRepository.findByCodeSearch(codeSearch);
+    }
 }

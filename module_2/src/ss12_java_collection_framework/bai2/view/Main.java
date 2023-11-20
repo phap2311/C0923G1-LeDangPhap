@@ -9,7 +9,7 @@ public class Main {
         ProductView productView = new ProductView();
         int choice;
         do{
-            System.out.println("1.Quản lý sản phẩm");;
+            System.out.println("1.Quản lý sản phẩm");
             System.out.println("2.Quản lý nhân viên");
             System.out.println("0.Exit");
             choice = Integer.parseInt(scanner.nextLine());

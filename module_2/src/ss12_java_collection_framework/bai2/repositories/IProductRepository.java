@@ -13,4 +13,15 @@ public interface IProductRepository {
     Product findByCode(String code);
 
     void remove(String code);
+
+    Product findByEditCode(String editCode);
+
+    void add(Product product1);
+
+    void removeE(String editCode);
+
+    Product findByCodeSearch(String codeSearch);
+
+
+
 }

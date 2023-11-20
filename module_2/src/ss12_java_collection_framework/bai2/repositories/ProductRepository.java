@@ -39,4 +39,37 @@ private static List<Product> products = new ArrayList<>();
           }
       }
     }
+    @Override
+    public Product findByEditCode(String editCode) {
+        for (Product product: products){
+            if(product.getCode().equals(editCode));{
+                return product;
+            }
+        }
+        return null;
+    }
+    @Override
+    public void add(Product product1) {
+        products.add(product1);
+    }
+
+    @Override
+    public void removeE(String editCode) {
+        for (Product product : products){
+            if (product.getCode().equals(editCode)){
+                products.remove(product);
+                break;
+            }
+        }
+    }
+
+    @Override
+    public Product findByCodeSearch(String codeSearch) {
+        for (Product product : products){
+            if (product.getCode().equals(codeSearch)){
+                return product;
+            }
+        }
+        return null;
+    }
 }

@@ -24,4 +24,19 @@ private IProductService iProductService = new ProductService();
     public void remove(String code) {
         iProductService.remove(code);
     }
+
+    public Product findByEditCode(String editCode) {
+       return iProductService.findByEditCode(editCode);
+    }
+
+    public void editProduct(Product product1) {
+        iProductService.add(product1);
+    }
+
+    public void removeE(String editCode) { iProductService.removeE(editCode);
+    }
+
+    public Product findByCodeSearch(String codeSearch) {
+        return iProductService.findByCodeSearch(codeSearch);
+    }
 }
