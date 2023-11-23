@@ -9,7 +9,8 @@ public class SetInserttionSort {
     }
 
     public static int[] insertionSort(int[] list) {
-        int x, index;
+        int x;
+        int index;
         for (int i = 1; i < list.length; i++) {
             x = list[i];
             index = i;

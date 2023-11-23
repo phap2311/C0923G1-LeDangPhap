@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class DisplayInsertionSort {
     public static void main(String[] args) {
         int[] array = {7, 6, 4, 8, 2, 5};
-        int x, index;
+        int x;
+        int index;
         for (int i = 1; i < array.length; i++) {
             x = array[i];
             index = i;
