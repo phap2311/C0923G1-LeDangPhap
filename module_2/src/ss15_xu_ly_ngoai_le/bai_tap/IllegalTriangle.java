@@ -16,8 +16,7 @@ public class IllegalTriangle {
             System.out.println("Đây là một tam giác");
         } catch (IllegalTriangleException e) {
             System.out.println(e.getMessage());
-        }
-        finally {
+        } finally {
             System.out.println("Đã hoàn thành");
         }
 
@@ -25,7 +24,7 @@ public class IllegalTriangle {
     }
 
     private static void inputTriangle(int a, int b, int c) throws IllegalTriangleException {
-        if ((a < 0 || b < 0 || c < 0) && (a + b <= c || a + c <= b || b + c <= a)) {
+        if ((a < 0 || b < 0 || c < 0 || a + b <= c || a + c <= b || b + c <= a)) {
             throw new IllegalTriangleException("Đây là không phải tam giác");
         }
     }
