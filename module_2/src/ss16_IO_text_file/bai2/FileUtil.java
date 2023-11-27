@@ -34,12 +34,12 @@ public class FileUtil {
                 nationList.add(nation);
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Không đọc được file");
         } finally {
             try {
                 buff.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println("Không đọc được file");
             }
         }
 
