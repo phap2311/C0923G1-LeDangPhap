@@ -25,7 +25,8 @@ public class ByteStream {
             try {
                 oos.close();
             } catch (IOException e) {
-                System.out.println("Lỗi không đọc được file");;
+                System.out.println("Lỗi không đọc được file");
+
             }
         }
 
@@ -38,15 +39,14 @@ public class ByteStream {
         try {
             fis = new FileInputStream(FILE_PATH);
             ois = new ObjectInputStream(fis);
-             productList = (List<Product>) ois.readObject();
+            productList = (List<Product>) ois.readObject();
         } catch (FileNotFoundException e) {
             System.out.println("Lỗi không tìm thấy file");
         } catch (IOException e) {
             System.out.println("Lỗi không đọc được file");
         } catch (ClassNotFoundException e) {
             System.out.println("Lỗi không tìm thấy lớp");
-        }
-        finally {
+        } finally {
             try {
                 fis.close();
                 ois.close();

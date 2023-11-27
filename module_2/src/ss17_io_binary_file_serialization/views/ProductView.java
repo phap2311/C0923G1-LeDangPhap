@@ -12,43 +12,45 @@ public class ProductView {
     private static int choice;
     private String code;
     private Product productSearch;
-    public void menuProduct() {
-    do {
-        System.out.println("----- Quản lý sản phẩm-------");
-        System.out.println("1.Thêm sản phẩm");
-        System.out.println("2.Hiển thị sản phẩm");
-        System.out.println("3.Tìm kiếm sản phẩm");
-        System.out.println("0.Thoát");
-        choice = Integer.parseInt(scanner.nextLine());
-        switch (choice){
-            case 1:
-                Product product = inputInformation();
-                productController.addProduct(product);
-                System.out.println("Thêm thành công");
-                break;
+    private Product product;
+    List<Product> products;
 
-            case 2:
-                List <Product> products = productController.getAll();
-                for (Product product1 : products){
-                    System.out.println(product1);
-                }
-                break;
-            case 3:
-                System.out.println("Nhập code cần tìm");
-                code = scanner.nextLine();
-                productSearch = productController.findByCode(code);
-                if(productSearch == null){
-                    System.out.println("Không tìm thấy code");
-                }
-                else {
-                    System.out.println("Thông tin sản phẩm cần tìm của bạn là: "+productSearch);
-                }
-            default:
-                System.out.println("Vui lòng nhập lại");
+    public void menuProduct() {
+        do {
+            System.out.println("----- Quản lý sản phẩm-------");
+            System.out.println("1.Thêm sản phẩm");
+            System.out.println("2.Hiển thị sản phẩm");
+            System.out.println("3.Tìm kiếm sản phẩm");
+            System.out.println("0.Thoát");
+            choice = Integer.parseInt(scanner.nextLine());
+            switch (choice) {
+                case 1:
+                    product = inputInformation();
+                    productController.addProduct(product);
+                    System.out.println("Thêm thành công");
+                    break;
+
+                case 2:
+                    products = productController.getAll();
+                    for (Product product1 : products) {
+                        System.out.println(product1);
+                    }
+                    break;
+                case 3:
+                    System.out.println("Nhập code cần tìm");
+                    code = scanner.nextLine();
+                    productSearch = productController.findByCode(code);
+                    if (productSearch == null) {
+                        System.out.println("Không tìm thấy code");
+                    } else {
+                        System.out.println("Thông tin sản phẩm cần tìm của bạn là: " + productSearch);
+                    }
+                default:
+                    System.out.println("Vui lòng nhập lại");
+            }
         }
+        while (true);
     }
-    while(true);
-}
 
     private Product inputInformation() {
         System.out.println("Nhập mã sản phẩm");
@@ -61,6 +63,6 @@ public class ProductView {
         String companyProduct = scanner.nextLine();
         System.out.println("Mô tả sản phẩm");
         String desribeProduct = scanner.nextLine();
-        return new Product (code,nameProduct,price,companyProduct,desribeProduct);
+        return new Product(code, nameProduct, price, companyProduct, desribeProduct);
     }
 }

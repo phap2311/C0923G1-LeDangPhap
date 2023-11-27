@@ -15,7 +15,7 @@ public class ProductRepository implements IProductRepository {
         productList.add(product);
         ByteStream.writeObjectList(productList);
         ByteStream.readObjectList();
-        for (Product product1 : productList){
+        for (Product product1 : productList) {
             System.out.println(product1);
         }
     }
@@ -27,8 +27,8 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public Product findByCode(String code) {
-        for (Product product : productList){
-            if(product.getCode().equalsIgnoreCase(code)){
+        for (Product product : productList) {
+            if (product.getCode().equalsIgnoreCase(code)) {
                 return product;
             }
         }

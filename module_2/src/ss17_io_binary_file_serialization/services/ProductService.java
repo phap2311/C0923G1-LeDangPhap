@@ -6,8 +6,8 @@ import ss17_io_binary_file_serialization.repositories.ProductRepository;
 
 import java.util.List;
 
-public class ProductService implements IProductService{
-    private static IProductRepository iProductRepository =new ProductRepository();
+public class ProductService implements IProductService {
+    private static IProductRepository iProductRepository = new ProductRepository();
 
 
     @Override

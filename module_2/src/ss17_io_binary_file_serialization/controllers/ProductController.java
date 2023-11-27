@@ -6,8 +6,8 @@ import ss17_io_binary_file_serialization.services.ProductService;
 
 import java.util.List;
 
-public class ProductController  {
-    private static IProductService iProductService =  new ProductService();
+public class ProductController {
+    private static IProductService iProductService = new ProductService();
 
     public void addProduct(Product product) {
         iProductService.save(product);
@@ -15,7 +15,7 @@ public class ProductController  {
 
 
     public List<Product> getAll() {
-       return iProductService.findAll();
+        return iProductService.findAll();
     }
 
     public Product findByCode(String code) {
