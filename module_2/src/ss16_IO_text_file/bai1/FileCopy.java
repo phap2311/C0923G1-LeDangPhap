@@ -17,16 +17,11 @@ public class FileCopy {
 
         FileReader fileReader;
         BufferedReader buff = null;
-        try {
-            fileReader = new FileReader(FILE_PATH);
-            buff = new BufferedReader(fileReader);
-
-        } catch (FileNotFoundException e) {
-            System.out.println("đường dẫn file sai");
-        }
         String line = null;
         String result = "";
         try {
+            fileReader = new FileReader(FILE_PATH);
+            buff = new BufferedReader(fileReader);
             while ((line = buff.readLine()) != null) {
                 result += line + "\n";
             }
@@ -47,14 +42,10 @@ public class FileCopy {
 
     public static void writeCsv(String result) {
         FileWriter fileWriter = null;
+        BufferedWriter buff = null;
         try {
             fileWriter = new FileWriter(FILE_TARGET);
-        } catch (IOException e) {
-            System.out.println("Không đọc được file");
-            ;
-        }
-        BufferedWriter buff = new BufferedWriter(fileWriter);
-        try {
+            buff = new BufferedWriter(fileWriter);
             buff.write(result);
         } catch (IOException e) {
             System.out.println("Không đọc được file");
