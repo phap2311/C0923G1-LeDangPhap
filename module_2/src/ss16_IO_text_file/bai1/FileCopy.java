@@ -10,37 +10,67 @@ import java.util.Scanner;
 
 public class FileCopy {
 
-    private static final String FILE_PATH = "D:\\codegym\\C0923G1-LeDangPhap\\module_2\\src\\ss16_IO_text_file\\sourceFile.csv";
+    private static final String FILE_PATH = "D:\\codegym\\C0923G1-LeDangPhap\\module_2\\src\\ss16_IO_text_file\\bai1\\sourceFile.csv";
     private static final String FILE_TARGET = "D:\\codegym\\C0923G1-LeDangPhap\\module_2\\src\\ss16_IO_text_file\\targetFile.csv";
 
-    public static String readCsv(String FILE_PATH) throws IOException {
+    public static String readCsv(String FILE_PATH) {
 
-        FileReader fileReader = new FileReader(FILE_PATH);
-        BufferedReader buff = new BufferedReader(fileReader);
-        String line;
-        String result = "";
-        while ((line = buff.readLine()) != null) {
-            result += line + "\n";
+        FileReader fileReader;
+        BufferedReader buff = null;
+        try {
+            fileReader = new FileReader(FILE_PATH);
+            buff = new BufferedReader(fileReader);
+
+        } catch (FileNotFoundException e) {
+            System.out.println("đường dẫn file sai");
         }
-        buff.close();
+        String line = null;
+        String result = "";
+        try {
+            while ((line = buff.readLine()) != null) {
+                result += line + "\n";
+            }
+        } catch (IOException e) {
+            System.out.println("Không đọc được file");
+            ;
+        } finally {
+            try {
+                buff.close();
+            } catch (IOException e) {
+                System.out.println("không đọc được file");
+
+            }
+        }
         return result;
     }
 
-    public static void writeCsv(String result) throws IOException {
-        FileWriter fileWriter = new FileWriter(FILE_TARGET);
+
+    public static void writeCsv(String result) {
+        FileWriter fileWriter = null;
+        try {
+            fileWriter = new FileWriter(FILE_TARGET);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         BufferedWriter buff = new BufferedWriter(fileWriter);
-        buff.write(result);
-        buff.close();
+        try {
+            buff.write(result);
+        } catch (IOException e) {
+            System.out.println("Lỗi");
+        } finally {
+            try {
+                buff.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
 
     }
 
     public static void main(String[] args) {
-        try {
-            System.out.println(readCsv(FILE_PATH));
-            writeCsv(readCsv(FILE_PATH));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        System.out.println(readCsv(FILE_PATH));
+        writeCsv(readCsv(FILE_PATH));
 
     }
 }
