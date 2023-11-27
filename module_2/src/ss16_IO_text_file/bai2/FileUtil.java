@@ -20,7 +20,7 @@ public class FileUtil {
             fileReader = new FileReader(FILE_NATION);
             buff = new BufferedReader(fileReader);
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println("Tên đường dẫn không tồn tại");
         }
         String line;
         String temp[];

@@ -32,12 +32,12 @@ public class FileCopy {
             }
         } catch (IOException e) {
             System.out.println("Không đọc được file");
-            ;
+
         } finally {
             try {
                 buff.close();
             } catch (IOException e) {
-                System.out.println("không đọc được file");
+                System.out.println("lỗi ");
 
             }
         }
@@ -50,7 +50,8 @@ public class FileCopy {
         try {
             fileWriter = new FileWriter(FILE_TARGET);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Lỗi");
+            ;
         }
         BufferedWriter buff = new BufferedWriter(fileWriter);
         try {
@@ -61,7 +62,7 @@ public class FileCopy {
             try {
                 buff.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println("Lỗi ");
             }
         }
 
