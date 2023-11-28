@@ -12,13 +12,12 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public void save(Product product) {
+        productList = ByteStream.readObjectList();
         productList.add(product);
         ByteStream.writeObjectList(productList);
-        ByteStream.readObjectList();
-        for (Product product1 : productList) {
-            System.out.println(product1);
+
         }
-    }
+
 
     @Override
     public List<Product> findAll() {

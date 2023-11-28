@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class ProductView {
     private Scanner scanner = new Scanner(System.in);
-    ProductController productController = new ProductController();
+    private ProductController productController = new ProductController();
     private static int choice;
     private String code;
     private Product productSearch;
     private Product product;
-    List<Product> products;
+    private List<Product> products;
 
     public void menuProduct() {
         do {
