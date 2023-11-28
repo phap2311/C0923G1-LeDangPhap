@@ -16,15 +16,11 @@ public class FileUtil {
         List<Nation> nationList = new ArrayList<>();
         FileReader fileReader;
         BufferedReader buff = null;
-        try {
-            fileReader = new FileReader(FILE_NATION);
-            buff = new BufferedReader(fileReader);
-        } catch (FileNotFoundException e) {
-            System.out.println("Tên đường dẫn không tồn tại");
-        }
         String line;
         String temp[];
         try {
+            fileReader = new FileReader(FILE_NATION);
+            buff = new BufferedReader(fileReader);
             while ((line = buff.readLine()) != null) {
                 temp = line.split(",");
                 int id = Integer.parseInt(temp[0]);
@@ -33,6 +29,8 @@ public class FileUtil {
                 Nation nation = new Nation(id, code, name);
                 nationList.add(nation);
             }
+        } catch (FileNotFoundException e) {
+            System.out.println("Tên đường dẫn không tồn tại");
         } catch (IOException e) {
             System.out.println("Không đọc được file");
         } finally {
