@@ -1,23 +1,33 @@
 package case_study.models.person;
 
 public class Person {
+    private String code;
     private String fullName;
     private String birthday;
     private String gender;
-    private Long identityCardNumber;
-    private Long numberPhone;
+    private String identityCardNumber;
+    private String numberPhone;
     private String email;
 
     public Person() {
     }
 
-    public Person(String fullName, String birthday, String gender, Long identityCardNumber, Long numberPhone, String email) {
+    public Person(String code,String fullName, String birthday, String gender, String identityCardNumber, String numberPhone, String email) {
+        this.code = code;
         this.fullName = fullName;
         this.birthday = birthday;
         this.gender = gender;
         this.identityCardNumber = identityCardNumber;
         this.numberPhone = numberPhone;
         this.email = email;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getFullName() {
@@ -44,19 +54,19 @@ public class Person {
         this.gender = gender;
     }
 
-    public Long getIdentityCardNumber() {
+    public String getIdentityCardNumber() {
         return identityCardNumber;
     }
 
-    public void setIdentityCardNumber(Long identityCardNumber) {
+    public void setIdentityCardNumber(String identityCardNumber) {
         this.identityCardNumber = identityCardNumber;
     }
 
-    public Long getNumberPhone() {
+    public String getNumberPhone() {
         return numberPhone;
     }
 
-    public void setNumberPhone(Long numberPhone) {
+    public void setNumberPhone(String numberPhone) {
         this.numberPhone = numberPhone;
     }
 
@@ -71,6 +81,7 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
+                "code='" +  code + '\'' +
                 "fullName='" + fullName + '\'' +
                 ", birthday='" + birthday + '\'' +
                 ", gender='" + gender + '\'' +

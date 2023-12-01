@@ -15,4 +15,34 @@ public class EmployeeController {
     public List<Employee> findAll() {
        return iEmployeeService.getAll();
     }
+
+    public Employee checkCodeStaff(String code) {
+       return iEmployeeService.checkByCode(code);
+    }
+
+    public void editFullName(String fullName, Employee employee) {
+        iEmployeeService.editFullName(fullName,employee);
+    }
+
+    public void editBirthday(String birthday, Employee employee) {
+        iEmployeeService.editBirthday(birthday,employee);
+    }
+
+    public void editGender(String gender, Employee employee) {
+        iEmployeeService.editGender(gender,employee);
+    }
+
+    public void editIDCard(String identityCardNumber, Employee employee) {
+        iEmployeeService.editIDCard(iEmployeeService,employee);
+    }
+
+
+
+    public void editNumberPhone(String numberPhone, Employee employee) {
+        iEmployeeService.editNumberPhone(numberPhone,employee);
+    }
+
+    public void editEmail(String email, Employee employee) {
+        iEmployeeService.editEmail(email,employee);
+    }
 }

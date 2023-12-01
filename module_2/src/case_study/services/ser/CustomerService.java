@@ -1,4 +1,10 @@
 package case_study.services.ser;
 
-public class CustomerService {
+import case_study.models.person.Customer;
+import case_study.services.i_ser.ICustomerService;
+
+import java.util.List;
+
+public class CustomerService  {
+
 }

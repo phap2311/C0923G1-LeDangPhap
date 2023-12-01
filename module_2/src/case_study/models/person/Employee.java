@@ -1,7 +1,7 @@
 package case_study.models.person;
 
 public class Employee extends Person {
-    private String codeStaff;
+
     private String level;
     private String position;
     private Long wage;
@@ -9,21 +9,17 @@ public class Employee extends Person {
     public Employee() {
     }
 
-    public Employee(String fullName, String birthday, String gender, Long identityCardNumber, Long numberPhone, String email, String codeStaff, String level, String position, Long wage) {
-        super(fullName, birthday, gender, identityCardNumber, numberPhone, email);
-        this.codeStaff = codeStaff;
+    public Employee(String code,String fullName, String birthday, String gender, String identityCardNumber, String numberPhone, String email, String level, String position, Long wage) {
+        super(code,fullName, birthday, gender, identityCardNumber, numberPhone, email);
+
         this.level = level;
         this.position = position;
         this.wage = wage;
     }
 
-    public String getCodeStaff() {
-        return codeStaff;
-    }
 
-    public void setCodeStaff(String codeStaff) {
-        this.codeStaff = codeStaff;
-    }
+
+
 
     public String getLevel() {
         return level;
@@ -52,16 +48,19 @@ public class Employee extends Person {
     @Override
     public String toString() {
         return "Employee{" +
-                "codeStaff='" + codeStaff + '\'' +
-                ", level='" + level + '\'' +
-                ", position='" + position + '\'' +
-                ", wage='" + wage + '\'' +
+
+                "code='" + super.getCode() + '\'' +
                 "fullName='" + super.getFullName() + '\'' +
                 ", birthday='" + super.getBirthday() + '\'' +
                 ", gender='" + super.getGender() + '\'' +
                 ", identityCardNumber='" + super.getIdentityCardNumber() + '\'' +
                 ", numberPhone='" + super.getNumberPhone() + '\'' +
                 ", email='" + super.getEmail() + '\'' +
+
+                ", level='" + level + '\'' +
+                ", position='" + position + '\'' +
+                ", wage='" + wage + '\'' +
+
                 '}';
     }
 }
