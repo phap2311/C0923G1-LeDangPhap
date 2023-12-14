@@ -1,6 +1,6 @@
 create database student_management;
 use student_management;
-create table class(
+create table classes(
 id_class int primary key,
 name_class varchar(50)
 );
