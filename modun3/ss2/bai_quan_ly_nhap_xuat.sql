@@ -27,8 +27,9 @@ ma_ncc varchar(20),
 foreign key (ma_ncc) references nha_cc (ma_ncc)
 );
 create table nhacc_sdt(
-ma_ncc varchar(20)primary key not null,
+ma_ncc varchar(20) not null,
 sdt int unique,
+primary key(ma_ncc,sdt),
 foreign key (ma_ncc) references nha_cc(ma_ncc)
 );
 create table chi_tiet_phieu_xuat(
