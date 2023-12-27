@@ -1,0 +1,15 @@
+h1 {
+    text-align: left;
+}
+
+table {
+
+    border: darkcyan;
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid;
+    text-align: left;
+    padding: 8px;
+}

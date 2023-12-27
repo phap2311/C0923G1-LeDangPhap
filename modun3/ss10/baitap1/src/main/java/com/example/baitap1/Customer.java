@@ -10,7 +10,6 @@ public class Customer {
     }
 
 
-
     public Customer(String nameCustomer, String birthday, String address, String cusImage) {
         this.nameCustomer = nameCustomer;
         this.birthday = birthday;
@@ -42,6 +41,7 @@ public class Customer {
     public void setAddress(String address) {
         this.address = address;
     }
+
     public String getCusImage() {
         return cusImage;
     }
@@ -50,14 +50,6 @@ public class Customer {
         this.cusImage = cusImage;
     }
 
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "nameCustomer='" + nameCustomer + '\'' +
-                ", birthday='" + birthday + '\'' +
-                ", address='" + address + '\'' +
-                ", cusImage='" + cusImage + '\'' +
 
-                '}';
     }
-}
+

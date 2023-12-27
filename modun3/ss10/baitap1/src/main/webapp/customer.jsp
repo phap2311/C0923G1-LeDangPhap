@@ -10,8 +10,9 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="customer.css">
 </head>
 <body>
-
+<jsp:include page="index.jsp"/>
 </body>
 </html>

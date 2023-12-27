@@ -4,20 +4,9 @@
 
 <html>
 <head>
-    <title>Customer List</title>
-    <style>
-        h1{
-            text-align: left;
-        }
-        table{
 
-            border: darkcyan;
-        }
-        th, td {
-            border-bottom: 1px solid;
-            text-align: left;
-        }
-    </style>
+    <title>Customer List</title>
+
 
 </head>
 <body>
@@ -26,23 +15,22 @@
 <table>
 
     <tr>
-        <th >Tên</th>
-        <th >Ngày sinh</th>
-        <th >Địa chỉ</th>
-        <th >Hình ảnh</th>
+        <th>Tên</th>
+        <th>Ngày sinh</th>
+        <th>Địa chỉ</th>
+        <th>Hình ảnh</th>
     </tr>
-<c:forEach items="${ds}" var="i">
-       <tr>
-           <td>${i.getNameCustomer()}</td>
-           <td>${i.getBirthday()}</td>
-           <td>${i.getAddress()}</td>
-           <td>
-               <img src="${i.getCusImage()}"  width="50px" height="50px">
-           </td>
-       </tr>
-</c:forEach>
+    <c:forEach items="${ds}" var="i">
+        <tr>
+            <td>${i.getNameCustomer()}</td>
+            <td>${i.getBirthday()}</td>
+            <td>${i.getAddress()}</td>
+            <td>
+                <img src="${i.getCusImage()}" width="50px" height="50px">
+            </td>
+        </tr>
+    </c:forEach>
 </table>
-
 
 
 </body>
