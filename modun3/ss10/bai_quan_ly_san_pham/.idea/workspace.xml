@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="64d4ebb6-5fc7-4f2c-ac7c-6f7d9177af19" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../module_2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/baitapthuattoan/bai13.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/baitapthuattoan/bai13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/controller/FacilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/controller/FacilityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/models/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/models/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/models/facility/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/models/facility/Facility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/models/facility/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/models/facility/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/models/facility/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/models/facility/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/models/facility/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/models/facility/Villa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/models/person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/models/person/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/i_repo/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/i_repo/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/i_repo/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/i_repo/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/i_repo/IFacilityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/i_repo/IFacilityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/i_repo/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/i_repo/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/repo/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/repo/BookingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/repo/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/repo/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/repo/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/repo/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/repo/FacilityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/repositories/repo/FacilityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/services/i_ser/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/services/i_ser/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/services/i_ser/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/services/i_ser/IEmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/services/i_ser/IFacilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/services/i_ser/IFacilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/services/i_ser/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/services/i_ser/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/services/ser/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/services/ser/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/services/ser/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/services/ser/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/services/ser/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/services/ser/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/services/ser/FacilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/services/ser/FacilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/util/MyRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/util/MyRegex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/util/saveFile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/util/saveFile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/views/BookingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/views/BookingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/views/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/views/CustomerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/views/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/views/EmployeeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/case_study/views/FacilityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/case_study/views/FacilityView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss10_dsa_danh_sach/list/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss10_dsa_danh_sach/list/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/constrollers/CarController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/constrollers/MotorBikeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/constrollers/TruckController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/models/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/models/MotorBike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/models/Truck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/models/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/repositories/CarRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/repositories/ICarRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/repositories/IMotorBikeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/repositories/ITruckRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/repositories/MotorBikeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/repositories/TruckRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/services/CarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/services/ICarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/services/IMotorBikeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/services/ITruckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/services/MotorBikeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/services/TruckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/view/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss12_java_collection_framework/bai_them/view/VehicleView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss13_Thuat_toan_tim_kiem/AlgorithmComplexityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss13_Thuat_toan_tim_kiem/AlgorithmComplexityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss14_thuan_toan_sap_xep/DisplayInsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss14_thuan_toan_sap_xep/DisplayInsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss3_method/TotalDiagonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss3_method/TotalDiagonal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss4_lop_doituong/Rhombus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss4_lop_doituong/Rhombus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss5_access_modifier_static_method/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss5_access_modifier_static_method/student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss8_mvc/constroller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss8_mvc/constroller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss8_mvc/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss8_mvc/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss8_mvc/service/StudentServicelmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss8_mvc/service/StudentServicelmpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_11_dsa_stack_queue/DecimalTranferBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss_11_dsa_stack_queue/DecimalTranferBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_11_dsa_stack_queue/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module_2/src/ss_11_dsa_stack_queue/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/constrollers/CarController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/constrollers/MotorBikeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/constrollers/TruckController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/models/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/models/MotorBike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/models/Truck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/models/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/repositories/ICarRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/repositories/IMotorBikeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/repositories/ITruckRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/repositories/impl/CarRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/repositories/impl/MotorBikeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/repositories/impl/TruckRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/services/CarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/services/ICarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/services/IMotorBikeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/services/ITruckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/services/MotorBikeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/services/TruckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/view/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module_2/src/ss_1212/bai_them/view/VehicleView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modun1/baitest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modun1/baitest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modun1/text.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modun1/text.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../baitap1/src/main/java/com/example/baitap1/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../baitap1/src/main/webapp/customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/.idea/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/.idea/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/.idea/filecase.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/.idea/filecase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/cart-case.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/cart-case.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/case.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/case.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/caseStu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/caseStu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8/landing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../out/baitap1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../out/baitap1.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2a8QMwuOb72EUEBDuStpJs1vaGj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codegym/C0923G1-LeDangPhap/modun3/ss11/bai_quan_ly_san_pham",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.84" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.84" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Gradle : com.example : bai_quan_ly_san_pham-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Gradle___com_example___bai_quan_ly_san_pham_1_0_SNAPSHOT_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : bai_quan_ly_san_pham-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64d4ebb6-5fc7-4f2c-ac7c-6f7d9177af19" name="Changes" comment="" />
+      <created>1703697684758</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703697684758</updated>
+      <workItem from="1703697685780" duration="154000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

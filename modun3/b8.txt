@@ -1,0 +1,114 @@
+Bootstrap là một front-end framework miễn phí để phát triển web
+nhanh hơn và dễ dàng hơn.
+cung cấp khả năng tạo các thiết kế responsive 
+câu hỏi:
+- Các kiểu chữ 
+không chân
+có chân
+- Các cách sử dụng màu trong css
+- Các loại web ( phân loại theo thể loại, mục đích)
+- Ưu nhược điểm của bootstrap
+- Các nguyên tắc cần lưu ý khi sử dụng bootstrap
+bài soạn:
+các kiểu chữ:
+
+1.font-family: thiết lập kiểu chữ
+Phông chữ Serif có một nét nhỏ ở rìa mỗi chữ cái. Chúng tạo cảm giác trang trọng và sang trọng.
+Phông chữ Sans-serif có đường nét rõ ràng (không có nét nhỏ kèm theo). Chúng tạo ra một cái nhìn hiện đại và tối giản.
+monospace - ở đây tất cả các chữ cái đều có cùng chiều rộng cố định. Họ tạo ra một cái nhìn máy móc. 
+crsive font bắt chước chữ viết tay của con người.
+fantasy là phông chữ trang trí/vui tươi.
+2.font-size: xác đinh kích thước font (px, em,rem,%...)
+3.font-weight: đặt độ đậm của font: normal, bold và gtri từ 100-900
+4.font-style: xác định kiểu chữ: bình thường , nghiêm or in đậm
+5.text-decoration: xác định trang trí văn bản , như gạch chân, gạch ngang.
+6.line-height xác định chiều cao (line height) của văn bản
+7.letter-spacing: điều chỉnh khoảng cách giữa các ký tự
+8.color xác định màu chữ của văn bản
+***
+các cách sử dụng màu trong css:
+Màu sắc được chỉ định bằng cách sử dụng tên màu 
+được xác định trước hoặc các giá trị RGB, HEX, HSL, RGBA, HSLA.
+1 sử dụng mã màu:hex code, 
+rgb or rgba
+2. sử dụng tên màu: red, blue...
+background-color:red
+***
+Theo Mục Đích:
+Trang web Thương mại điện tử (E-commerce): Dành cho việc mua bán sản phẩm và dịch vụ trực tuyến.
+
+Trang web Thông tin (Informational Websites): Cung cấp thông tin về một chủ đề cụ thể, như trang web của doanh nghiệp, tổ chức, hoặc trang web tin tức.
+
+Trang web Giáo dục (Educational Websites): Cung cấp nội dung học thuật và giáo dục, chẳng hạn như trang web của trường học, trường đại học, hoặc nền tảng học trực tuyến.
+
+Trang web Giải trí (Entertainment Websites): Dành cho mục đích giải trí, bao gồm trang web phim, âm nhạc, trò chơi, và các nội dung giải trí khác.
+
+Trang web Mạng xã hội (Social Media Websites): Cho phép người dùng tương tác và kết nối với nhau, như Facebook, Twitter, Instagram.
+
+Trang web Blog: Nơi các tác giả có thể chia sẻ thông tin, ý kiến, và nội dung cá nhân.
+
+Trang web Di động (Mobile Websites): Tối ưu hóa cho trải nghiệm trên thiết bị di động.
+
+2. Theo Thể Loại Nội Dung:
+Trang web Tin tức (News Websites): Cung cấp tin tức và thông tin nhanh chóng về sự kiện và xu hướng.
+
+Trang web Thể thao (Sports Websites): Liên quan đến thông tin và sự kiện thể thao.
+
+Trang web Âm nhạc (Music Websites): Dành cho người yêu thích âm nhạc, cung cấp âm nhạc và thông tin liên quan.
+
+Trang web Du lịch (Travel Websites): Cung cấp thông tin và dịch vụ đặt phòng, vé máy bay cho người đi du lịch.
+
+Trang web Thức ăn và Nấu ăn (Food and Cooking Websites): 
+Dành cho người quan tâm đến ẩm thực, cung cấp công thức nấu ăn và thông tin về thực phẩm.
+*****
+Ưu Điểm:
+Dễ Sử Dụng: Bootstrap cung cấp một tập hợp các class và components đã được thiết kế sẵn, giúp làm giảm thời gian và công sức trong việc xây dựng giao diện người dùng.
+
+Responsive Design: Bootstrap hỗ trợ thiết kế đáp ứng (responsive design), giúp trang web hoạt động tốt trên nhiều thiết bị và kích thước màn hình khác nhau.
+
+Hỗ Trợ Trình Duyệt Rộng Rãi: Bootstrap tương thích với nhiều trình duyệt khác nhau, bao gồm cả các phiên bản cũ hơn.
+
+Hệ Thống Grid Linh Hoạt: Grid system của Bootstrap giúp tổ chức và căn chỉnh layout trang web một cách dễ dàng và linh hoạt.
+
+Documentation Phong Phú: Bootstrap có tài liệu hướng dẫn chi tiết và cộng đồng sử dụng lớn, giúp người phát triển dễ dàng tìm hiểu và sử dụng.
+
+Customizable: Dù Bootstrap cung cấp nhiều components và styles mặc định, nhưng cũng cho phép người phát triển tùy chỉnh theo yêu cầu cụ thể.
+
+Nhược Điểm:
+Khả Năng Hiệu Suất: Do Bootstrap chứa nhiều CSS và JavaScript, nó có thể ảnh hưởng đến hiệu suất trang web nếu không được tối ưu hóa đúng cách.
+
+Giao Diện Đồng Nhất: Một số trang web sử dụng Bootstrap có thể trở nên giống nhau và không có tính cá nhân hóa nếu không được tùy chỉnh đầy đủ.
+
+Kích Thước Lớn: Bootstrap có kích thước lớn so với một số framework nhỏ hơn, điều này có thể tăng thời gian tải trang nếu không sử dụng chỉ những phần cần thiết.
+
+Học Cú Pháp: Một số người phát triển mới có thể cảm thấy khó khăn khi học cú pháp và class của Bootstrap, đặc biệt là khi muốn tùy chỉnh nhiều hơn.
+
+Tùy Chỉnh Khó Khăn Đối Với Thiết Kế Đặc Biệt: Trong một số trường hợp, việc tùy chỉnh và thiết kế đặc biệt có thể trở nên khó khăn hơn khi sử dụng Bootstrap so với việc viết CSS từ đầu.
+*****
+các nguyên tắc:
+1. Tận Dụng Hệ Thống Grid Của Bootstrap:
+Sử dụng hệ thống grid để tạo layout linh hoạt và responsive.
+Tuân thủ các quy tắc về cột và hàng trong grid system.
+2. Không Overwrite CSS Mặc Định Không Cần Thiết:
+Tránh việc ghi đè (overwrite) các styles mặc định của Bootstrap nếu không cần thiết.
+Nếu bạn cần tùy chỉnh, hãy sử dụng custom class và thêm styles mới.
+3. Tùy Chỉnh CSS Cẩn Thận:
+Nếu cần tùy chỉnh CSS, hãy thực hiện một cách cẩn thận để tránh xung đột và giữ nguyên tính linh hoạt của Bootstrap.
+4. Sử Dụng Class Hợp Lý:
+Sử dụng class Bootstrap một cách có tổ chức và có ý nghĩa.
+Không sử dụng quá nhiều class không cần thiết.
+5. Chăm Sóc Hiệu Suất:
+Tối ưu hóa trang web để đảm bảo hiệu suất tốt.
+Không sử dụng quá nhiều components hoặc plugins nếu chúng không được sử dụng.
+6. Kiểm Thử Trên Nhiều Trình Duyệt:
+Kiểm thử trang web của bạn trên nhiều trình duyệt để đảm bảo tính tương thích.
+7. Responsive Design:
+Khi xây dựng trang web, hãy đảm bảo rằng nó là responsive và hoạt động trên các thiết bị khác nhau.
+8. Tuân Thủ Nguyên Tắc Thiết Kế Tương Thích Với Thiết Kế Đáp Ứng:
+Bootstrap theo phong cách thiết kế "mobile-first", hãy tuân thủ và xây dựng từ di động trước khi mở rộng cho các kích thước màn hình lớn.
+9. Sử Dụng JavaScript Cẩn Thận:
+Chỉ sử dụng JavaScript khi thực sự cần thiết.
+Tối ưu hóa và tùy chỉnh các plugin JavaScript nếu sử dụng.
+10. Đọc Tài Liệu:
+Đọc tài liệu Bootstrap để hiểu rõ về các class và components có sẵn.
+Luôn cập nhật với phiên bản mới nhất của Bootstrap để sử dụng những cải tiến và sửa lỗi.

@@ -155,19 +155,27 @@ public class UserRepository implements IUserRepository {
         List<User> userList = new ArrayList<>();
         User user;
         try {
+            PreparedStatement statement = connection.prepareStatement(FINDBYCOUNTRY);
+            statement.setString(1, country);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String nameUser = resultSet.getString("nameUser");
+                String email = resultSet.getString("email");
+                String countryFind = resultSet.getString("country");
+                user = new User(id, nameUser, email, countryFind);
+                userList.add(user);
+            }
+            resultSet.close();
+            statement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
-        }
-        PreparedStatement statement = connection.prepareStatement(FINDBYCOUNTRY);
-        statement.setString(1, country);
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            int id = resultSet.getInt("id");
-            String nameUser = resultSet.getString("nameUser");
-            String email = resultSet.getString("email");
-            String country = resultSet.getString("country");
-        }
+        return userList;
     }
-
-
 }
+
+
+
 

@@ -25,35 +25,22 @@ public class ProductController extends HttpServlet {
         }
         switch (action) {
             case "create":
-                req.getRequestDispatcher("product/create.jsp").forward(req, resp);
+                getCreate(req, resp);
+
                 break;
             case "update":
-                RequestDispatcher dispatcher= req.getRequestDispatcher("product/update.jsp");
-                Integer id = Integer.parseInt(req.getParameter("id"));
-                Product product = this.iProductService.findByCode(id);
-                req.setAttribute("productUp", product);
-                dispatcher.forward(req, resp);
+                getUpdate(req, resp);
                 break;
             case "delete":
-                 dispatcher= req.getRequestDispatcher("product/delete.jsp");
-                 id = Integer.parseInt(req.getParameter("id"));
-                 product = this.iProductService.findByCode(id);
-                req.setAttribute("productDel", product);
-                dispatcher.forward(req, resp);
+                getDetele(req, resp);
+
                 break;
             case "showDetail":
-                dispatcher = req.getRequestDispatcher("product/showDetail.jsp");
-                id = Integer.parseInt(req.getParameter("id"));
-                product = this.iProductService.findByCode(id);
-                req.setAttribute("product", product);
-                dispatcher.forward(req,resp);
+                getShowDetail(req, resp);
+
                 break;
             case "searchName":
-                dispatcher = req.getRequestDispatcher("product/searchName.jsp");
-                String nameProduct = req.getParameter("nameProduct");
-                product = this.iProductService.findByName("nameProduct");
-                req.setAttribute("product",product);
-                dispatcher.forward(req,resp);
+                getSearchName(req, resp);
                 break;
             case "view":
                 viewProduct(req, resp);
@@ -64,6 +51,42 @@ public class ProductController extends HttpServlet {
 
         }
 
+    }
+
+    private void getSearchName(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("product/searchName.jsp");
+        String nameProduct = req.getParameter("nameProduct");
+        Product product = this.iProductService.findByName("nameProduct");
+        req.setAttribute("product", product);
+        dispatcher.forward(req, resp);
+    }
+
+    private void getShowDetail(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("product/showDetail.jsp");
+        int id = Integer.parseInt(req.getParameter("id"));
+        Product product = this.iProductService.findByCode(id);
+        req.setAttribute("product", product);
+        dispatcher.forward(req, resp);
+    }
+
+    private void getDetele(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("product/delete.jsp");
+        int id = Integer.parseInt(req.getParameter("id"));
+        Product product = this.iProductService.findByCode(id);
+        req.setAttribute("productDel", product);
+        dispatcher.forward(req, resp);
+    }
+
+    private void getUpdate(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("product/update.jsp");
+        Integer id = Integer.parseInt(req.getParameter("id"));
+        Product product = this.iProductService.findByCode(id);
+        req.setAttribute("productUp", product);
+        dispatcher.forward(req, resp);
+    }
+
+    private void getCreate(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        resp.sendRedirect("product/create.jsp");
     }
 
     private void viewProduct(HttpServletRequest req, HttpServletResponse resp) {
@@ -87,7 +110,7 @@ public class ProductController extends HttpServlet {
 
     private void showListProduct(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Product> productList = this.iProductService.getAllProduct();
-        //productList
+
         req.setAttribute("productList", productList);
         req.getRequestDispatcher("product/list.jsp").forward(req, resp);
     }
@@ -109,16 +132,23 @@ public class ProductController extends HttpServlet {
                 deleteProduct(req, resp);
                 break;
             case "searchName":
-                searchName(req,resp);
+                searchName(req, resp);
                 break;
 
         }
     }
 
     private void searchName(HttpServletRequest req, HttpServletResponse resp) {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("product/searchName.jsp");
         String nameProduct = req.getParameter("nameProduct");
-        Product product = this.iProductService.findByName(nameProduct);
-
+        req.setAttribute("products", iProductService.findByName(nameProduct));
+        try {
+            dispatcher.forward(req, resp);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

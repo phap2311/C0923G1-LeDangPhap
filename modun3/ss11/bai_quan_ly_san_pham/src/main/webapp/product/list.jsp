@@ -49,10 +49,15 @@
 
 
         </tr>
-       
+
     </c:forEach>
     </tbody>
 </table>
-<button><a href="/product?action=searchName">Search</a> </button>
+<h4 style="color: red">Nhập tên muốn tìm</h4>
+<form action="/product">
+    <input type="text" name="nameProduct">
+    <button>Tìm kiếm</button>
+</form>
+
 </body>
 </html>

@@ -121,7 +121,7 @@ public class UserServlet extends HttpServlet {
         System.out.println(userList);
         req.setAttribute("country",country);
         req.setAttribute("userList",userList);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/user/search.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/searchCountry.jsp");
         try {
             dispatcher.forward(req,resp);
         } catch (ServletException e) {
